@@ -12,10 +12,25 @@ Output: src/data/tree.json  (only short facts: PhD school, year, advisor names; 
 """
 import json, os, re, sys, glob, time, unicodedata, urllib.parse, urllib.request
 
+import argparse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW = os.path.join(ROOT, "data", "raw")
-CACHE = os.path.join(ROOT, "data", "cache", "wikidata")
-OUT = os.path.join(ROOT, "src", "data", "tree.json")
+# --discipline psych reads data/psych/raw; --out SITE reads and writes SITE/src/data (the exported sibling site)
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--discipline", default=None, help="e.g. psych")
+_ap.add_argument("--out", default=None, help="site folder whose src/data to use (default: this repo)")
+_args = _ap.parse_args()
+if _args.discipline:
+    os.environ["DISCIPLINE"] = _args.discipline
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from disciplines import current  # noqa: E402
+DISC, CFG = current()
+SITE = os.path.abspath(os.path.expanduser(_args.out)) if _args.out else ROOT
+SRC_DATA = os.path.join(SITE, "src", "data")
+RAW = os.path.join(str(CFG["data"]), "raw")
+CACHE = os.path.join(ROOT, "data", "cache", "wikidata" if DISC == "linguistics" else f"wikidata_{DISC}")
+OUT = os.path.join(SRC_DATA, "tree.json")
+# the field's own words: an Academic Family Tree area, or a Wikidata description, that confirms a name match
+FIELD_AREA = re.compile(r"\bling" if DISC == "linguistics" else r"psych|neuro|cogsci|cognit", re.I)
 
 # ---------- names ----------
 def norm(s):
@@ -82,7 +97,7 @@ for short in ["Stanford", "Harvard", "Yale", "Princeton", "Cornell", "Georgetown
               "Brandeis", "Columbia", "Carnegie Mellon", "Boston", "Purdue", "Rice", "Tulane", "Syracuse", "Vanderbilt", "Arizona State", "Georgia State", "Northern Arizona"]:
     ALIASES.append((rf"^({short.lower()}( university)?)$", f"{short} University"))
 # every university on the site, by its own name
-for _p in json.load(open(os.path.join(ROOT, "src", "data", "programs.json"), encoding="utf8")):
+for _p in json.load(open(os.path.join(SRC_DATA, "programs.json"), encoding="utf8")):
     ALIASES.append(("^" + re.sub(r"\s+", " ", re.sub(r"\bat\b", " ", norm(_p["name"]))).strip() + "$", _p["name"]))
 ALIASES = [(re.compile(a.replace(",? (at )?", " ").replace(",? ", " ").replace("( at ", "( ")), b) for a, b in ALIASES]
 STOP = set("while sciences science linguistics psychology her his she he their they not contact email personal website research i as in from and at ph the my our after before since then where with".split())
@@ -195,7 +210,8 @@ def from_profile_advisors(bio):
 
 # ---------- 2. Wikidata ----------
 SPARQL = "https://query.wikidata.org/sparql"
-LANGY = re.compile(r"lingu|language|speech|phonet|phonolog|psycholog|cognitive|computer scien|philosoph|anthropolog|natural language|semantic|syntax", re.I)
+LANGY = re.compile(r"lingu|language|speech|phonet|phonolog|psycholog|cognitive|computer scien|philosoph|anthropolog|natural language|semantic|syntax", re.I) if DISC == "linguistics" else \
+    re.compile(r"psycholog|psychiatr|neuroscien|cognitive|behavio|brain|developmental|social scien", re.I)
 
 def sparql(q, cache_name):
     cp = os.path.join(CACHE, cache_name + ".json")
@@ -252,7 +268,7 @@ def wikidata(fac, phd=None):
         if v("adv"): it["adv"][v("adv")] = v("advLabel")
         if v("stu"): it["stu"][v("stu")] = v("stuLabel")
         if v("empLabel"): it["emp"].add(v("empLabel"))
-    progs = {p["slug"]: p for p in json.load(open(os.path.join(ROOT, "src", "data", "programs.json"), encoding="utf8"))}
+    progs = {p["slug"]: p for p in json.load(open(os.path.join(SRC_DATA, "programs.json"), encoding="utf8"))}
     for qid, it in items.items():
         if not (it["adv"] or it["stu"]):
             continue
@@ -328,7 +344,7 @@ def academictree(fac, phd=None):
     """advisor (grad-student mentor) links for faculty on the site, from the Academic Family Tree export"""
     if not at_download():
         raise RuntimeError("export files missing")
-    progs = {p["slug"]: p for p in json.load(open(os.path.join(ROOT, "src", "data", "programs.json"), encoding="utf8"))}
+    progs = {p["slug"]: p for p in json.load(open(os.path.join(SRC_DATA, "programs.json"), encoding="utf8"))}
     want = {}
     for f in fac:
         want.setdefault(key(f["name"]), []).append(f)
@@ -356,7 +372,7 @@ def academictree(fac, phd=None):
             conns.append((p1, p2))
             phd_places.setdefault(p1, set()).add(loc)
     def uni_words(s):
-        return set(norm(s).split()) - {"university", "of", "the", "at", "college", "institute", "and", "school", "department", "linguistics"}
+        return set(norm(s).split()) - {"university", "of", "the", "at", "college", "institute", "and", "school", "department", "linguistics", "psychology", "neuroscience"}
     # choose one Academic Family Tree person per faculty member
     match = {}
     for k, fs in want.items():
@@ -372,9 +388,11 @@ def academictree(fac, phd=None):
                 parts = [a for a in area.split(",") if a.strip()]
                 if parts and all(UNRELATED.search(a) for a in parts):
                     continue  # same name at the same university, but a physicist, theologian, geologist...
-                if not at_uni and not (re.search(r"\bling", area) or phd_ok):
+                if not at_uni and not (FIELD_AREA.search(area) or phd_ok):
                     continue  # can't confirm by university, linguistics or PhD school: probably someone else with the same name
-                score = (2 if at_uni else 0) + (1 if phd_ok else 0) + (1 if re.search(r"\bling", area) else 0)
+                if DISC != "linguistics" and not (at_uni or phd_ok) and len(pids) > 1:
+                    continue  # psychology is most of the tree: with several people of this name, a shared field alone does not confirm it
+                score = (2 if at_uni else 0) + (1 if phd_ok else 0) + (1 if FIELD_AREA.search(area) else 0)
                 scored.append((score, pid))
             scored.sort(reverse=True)
             if scored and (len(scored) == 1 or scored[0][0] > scored[1][0]):
@@ -390,7 +408,7 @@ def academictree(fac, phd=None):
 
 
 def main():
-    fac = json.load(open(os.path.join(ROOT, "src", "data", "faculty.json"), encoding="utf8"))
+    fac = json.load(open(os.path.join(SRC_DATA, "faculty.json"), encoding="utf8"))
     site = {f["id"] for f in fac}
     bykey = {}
     for f in fac:

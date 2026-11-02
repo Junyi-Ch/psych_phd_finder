@@ -63,8 +63,6 @@ export const I18N: Record<string, { en: string; zh: string }> = {
   field_COGSCI: { en: 'Cognitive science', zh: '认知科学' },
   field_NEURO: { en: 'Neuroscience programs', zh: '神经科学项目' },
   net_lede2: { en: 'See how faculty at the top 100 U.S. universities relate to each other: people whose research is similar sit close together. Click anyone on the map.', zh: '看看美国前 100 所大学的教师之间如何关联：研究方向相近的人会靠在一起。点击地图上的任何人查看详情。' },
-  net_how1: { en: 'Click a dot to see that person and the researchers closest to them.', zh: '点击一个点，查看此人和研究最接近的学者。' },
-  net_how2: { en: 'Drag to move; scroll or pinch to zoom. Use “Works at” to highlight one school.', zh: '拖动以移动，滚动或双指缩放。用“任职”突出显示一所学校。' },
   net_color2: { en: 'Dot colour = main research area (click to hide or show):', zh: '点的颜色 = 主要研究领域（点击可隐藏或显示）：' },
   net_color: { en: 'Colour = main research area', zh: '颜色 = 主要研究领域' },
   net_other: { en: 'No research-area label', zh: '无研究领域标签' },
