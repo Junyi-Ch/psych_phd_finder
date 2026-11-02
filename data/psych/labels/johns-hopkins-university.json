@@ -1,0 +1,3949 @@
+{
+ "slug": "johns-hopkins-university",
+ "labeled_at": "2026-10-30",
+ "faculty": [
+  {
+   "name": "Marina Bedny",
+   "summary": "Studies how developmental experience shapes the human mind and brain, focusing on visual cortex plasticity and conceptual development in blind individuals.",
+   "summary_zh": "研究发育经验如何塑造人类心智和大脑，重点关注盲人视觉皮层可塑性和概念发展。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_INFANTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_PRIMATES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "brain development",
+    "plasticity",
+    "cognitive neuroscience",
+    "concepts",
+    "visual cortex",
+    "blind individuals",
+    "cortical plasticity",
+    "conceptual development"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Janice Chen",
+   "summary": "Studies how we construct and retrieve memories of complex real-world episodes using movies and narratives, focusing on mnemonic and sensory systems.",
+   "summary_zh": "研究复杂现实事件的记忆构建与检索过程，使用电影和叙述作为刺激，关注记忆和感觉系统的作用。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "real-world memory",
+    "cognitive neuroscience",
+    "temporal structure",
+    "memories",
+    "movies",
+    "narratives",
+    "mnemonic systems",
+    "sensory systems"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Céline Drieu",
+   "summary": "Studies how distributed brain networks support learning and memory in rodents, using electrophysiology, imaging, and optogenetics.",
+   "summary_zh": "研究分布式脑网络如何支持学习和记忆，使用电生理学、成像和光遗传学方法在啮齿动物中进行研究。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_CIRCUIT_TOOLS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuronal dynamics",
+    "learning and memory",
+    "cognitive maps",
+    "sleep",
+    "memory consolidation",
+    "rodents",
+    "electrophysiology",
+    "two-photon calcium imaging",
+    "optogenetics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Howard Egeth",
+   "summary": "Studies perception and cognition, attention and attentional selectivity, and memory.",
+   "summary_zh": "研究知觉和认知、注意力和注意力选择性以及记忆。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perception",
+    "cognition",
+    "attention",
+    "memory"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Lisa Feigenson",
+   "summary": "Studies the development of numerical abilities, working memory, and early learning in infants and adults.",
+   "summary_zh": "研究婴儿和成人数量能力、工作记忆和早期学习的发展。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "numerical abilities",
+    "working memory",
+    "early learning",
+    "infants",
+    "adults"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Chaz Firestone",
+   "summary": "Studies perception and how it interacts with higher-level cognition, exploring physical intuitions and visual attention.",
+   "summary_zh": "研究知觉及其与高级认知的相互作用，探索物理直觉和视觉注意力。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perception",
+    "attention",
+    "visual cognition",
+    "cognitive science",
+    "intuitions",
+    "psychophysics",
+    "computational models",
+    "brain-damaged patients"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jonathan Flombaum",
+   "summary": "Studies visual perception, attention, and cognition using various methods.",
+   "summary_zh": "研究视觉感知、注意力和认知，使用多种方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "visual perception",
+    "attention",
+    "cognition",
+    "methods",
+    "perception"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Justin Halberda",
+   "summary": "Studies how vision, cognition, and language interact, focusing on word-learning and numerical cognition in infants and adults.",
+   "summary_zh": "研究视觉、认知和语言之间的相互作用，关注婴儿和成人词汇学习和数理认知。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_PSYCHOPHYSICS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "word-learning",
+    "infants",
+    "adults",
+    "eye-tracking",
+    "numerical cognition",
+    "attention",
+    "working memory"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Christopher Honey",
+   "summary": "Studies how the brain perceives and learns sequences of information using computational methods.",
+   "summary_zh": "研究大脑如何通过计算方法感知和学习信息序列。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "sequences",
+    "information",
+    "perception",
+    "learning",
+    "computational",
+    "cognitive neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Patricia Janak",
+   "summary": "Studies the behavioral and neural mechanisms of associative learning and addiction, focusing on the role of the amygdala and dopamine in cue and outcome encoding, and relapse triggered by.",
+   "summary_zh": "研究条件反射和成瘾的行为和神经机制，重点在于杏仁核和多巴胺在条件刺激和结果编码中的作用，以及环境线索引起的复吸机制。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MOTIVATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "associative learning",
+    "addiction",
+    "amygdala",
+    "dopamine",
+    "optogenetics",
+    "relapse",
+    "cue",
+    "outcome",
+    "behavior",
+    "neural circuits"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Christopher Krupenye",
+   "summary": "Studies the cognitive abilities of humans and other animals, focusing on theory of mind, social and physical knowledge, and mental time travel using eye-tracking and behavioral tasks.",
+   "summary_zh": "研究人类和其他动物的认知能力，特别是理论思维、社会和物理知识以及心理时间旅行，使用眼动追踪和行为任务。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_INFANTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CHILDREN",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_PRIMATES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_OTHER_ANIMALS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_BIRDS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "theory of mind",
+    "social and physical knowledge",
+    "mental time travel",
+    "eye-tracking",
+    "behavioral tasks",
+    "chimpanzees",
+    "bonobos",
+    "apes",
+    "dogs"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kishore Kuchibhotla",
+   "summary": "Studies neural circuits and dynamics that enable learning, with an emphasis on the role of context and brain state.",
+   "summary_zh": "研究神经回路和动态机制，以了解学习过程，重点关注上下文和脑状态的作用。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neural circuits",
+    "learning",
+    "decision-making",
+    "context",
+    "brain state",
+    "computational modeling",
+    "two-photon calcium imaging",
+    "optogenetics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Shari Liu",
+   "summary": "Studies how infants and young children develop cognitive abilities, using behavioral and neuroimaging methods.",
+   "summary_zh": "研究婴儿和幼儿的认知能力发展，使用行为和神经影像学方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive development",
+    "infant cognition",
+    "social cognition",
+    "neuroimaging",
+    "behavioral studies"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Cynthia Moss",
+   "summary": "Studies how bats use echolocation to navigate and perceive their environment, focusing on sensorimotor integration and spatial perception.",
+   "summary_zh": "研究蝙蝠通过回声定位感知环境和导航的机制，重点在于感觉运动整合和空间知觉。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_OTHER_ANIMALS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "echolocation",
+    "bats",
+    "sensorimotor integration",
+    "spatial perception",
+    "natural behaviors",
+    "neural systems",
+    "adaptive motor control"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Shreesh Mysore",
+   "summary": "Studies the circuit mechanisms of attention and decision-making using computational neuroscience and a comparative approach.",
+   "summary_zh": "研究注意力和决策行为背后的神经环路机制，采用计算神经科学和比较方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DECISION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "attention",
+    "decision-making",
+    "computational neuroscience",
+    "neural circuits",
+    "behavior"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ian Phillips",
+   "summary": "Studies perception, memory, imagination, consciousness, and time perception using philosophical and empirical methods.",
+   "summary_zh": "研究知觉、记忆、想象、意识和时间知觉，采用哲学和实证方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_CONCEPTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perception",
+    "memory",
+    "imagination",
+    "consciousness",
+    "time perception",
+    "philosophy",
+    "empirical methods"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Barbara Landau",
+   "summary": "Studies how children learn words from spatial relationships, using experimental methods with young participants.",
+   "summary_zh": "研究儿童如何通过空间关系学习词汇，使用针对幼儿的实验方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "language",
+    "space",
+    "development",
+    "children",
+    "experimental methods",
+    "spatial relationships"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brenda Rapp",
+   "summary": "Studies the cognitive processes and neural substrates of written and spoken word production and comprehension, using fMRI to understand recovery from neural injury.",
+   "summary_zh": "研究书面和口头单词生成和理解的认知过程和神经基础，使用功能性磁共振成像（fMRI）来理解神经损伤后的恢复过程。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_PATIENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "written word production",
+    "reading",
+    "cognitive neuropsychology",
+    "fmri",
+    "neural substrates",
+    "dysgraphia",
+    "spelling",
+    "recovery",
+    "neural injury"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Marilyn Albert",
+   "summary": "Studies aging, cognition, and memory in humans.",
+   "summary_zh": "研究人类衰老、认知和记忆。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_AGING",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "aging",
+    "cognition",
+    "memory",
+    "humans"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Charles Connor",
+   "summary": "Studies how the brain transforms visual images into knowledge about the world, focusing on higher-level visual cortex and object and scene vision.",
+   "summary_zh": "研究大脑如何将视觉图像转化为对世界的知识，重点在于高级视觉皮层和物体与场景视觉。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_BIRDS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "visual cortex",
+    "object and scene vision",
+    "population coding",
+    "neural algorithms",
+    "prosthetics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Mounya Elhilali",
+   "summary": "Studies how the brain processes complex sounds and how this guides human behavior, using computational models and neural recordings.",
+   "summary_zh": "研究大脑如何处理复杂声音以及这种处理如何指导人类行为，使用计算模型和神经记录。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "sound perception",
+    "speech perception",
+    "neural recordings",
+    "computational models",
+    "adaptive processing",
+    "machine parsing",
+    "public health",
+    "signal processing",
+    "acoustic environments"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Christopher Fetsch",
+   "summary": "Studies how the brain combines visual and vestibular signals to make decisions about self-motion and the confidence in those decisions.",
+   "summary_zh": "研究大脑如何结合视觉和前庭信号来做出关于自身运动的决策及其信心。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_CIRCUIT_TOOLS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_PRIMATES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perceptual decision making",
+    "multisensory integration",
+    "confidence",
+    "self-motion",
+    "optogenetic",
+    "neural circuits"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Barry Gordon",
+   "summary": "Studies cognitive and behavioral aspects of neurology, focusing on improving language, memory, and thinking skills in individuals with brain conditions.",
+   "summary_zh": "研究神经病学的认知和行为方面，专注于改善患有脑部疾病个体的语言、记忆和思维能力。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive neurology",
+    "neuropsychology",
+    "autism",
+    "alzheimer’s disease",
+    "memory",
+    "language",
+    "thinking skills",
+    "brain conditions"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "E.J. Green",
+   "summary": "Explores the philosophical foundations of perception, integrating insights from cognitive science.",
+   "summary_zh": "探讨知觉的哲学基础，结合认知科学的见解。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perception",
+    "philosophy of mind",
+    "cognitive science"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Steven Gross",
+   "summary": "Explores the philosophy of language, mind, and cognitive science, focusing on topics like perception, attention, and cognitive penetration.",
+   "summary_zh": "研究语言、心灵和认知科学的哲学，重点关注知觉、注意力和认知渗透等主题。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_CONCEPTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "philosophy of language",
+    "philosophy of mind",
+    "cognitive science",
+    "perception",
+    "attention",
+    "cognitive penetration"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Leyla Isik",
+   "summary": "Studies how humans recognize and understand social information from visual input, using a combination of human behavior, neuroimaging, and advanced computational modeling.",
+   "summary_zh": "研究人类如何从视觉输入中识别和理解社会信息，使用人类行为、神经成像和高级计算建模的结合。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "social perception",
+    "neuroimaging",
+    "computational modeling",
+    "visual cognition",
+    "neural networks"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Alfredo Kirkwood",
+   "summary": "Studies mechanisms of cortical modification, exploring how the brain changes in response to experience.",
+   "summary_zh": "研究皮层可塑性的机制，探索大脑如何因经验而改变。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cortical modification",
+    "mechanisms",
+    "brain",
+    "experience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "James Knierim",
+   "summary": "Studies how the hippocampal formation influences behavior through neural activity.",
+   "summary_zh": "研究海马区通过神经活动如何影响行为。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": []
+   },
+   "keywords": [
+    "hippocampal formation",
+    "behavioral neurophysiology",
+    "neural activity"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Hey-Kyoung Lee",
+   "summary": "Studies the cellular and molecular changes at synapses to allow memory storage, using electrophysiological recording, biochemical/molecular analysis, and imaging.",
+   "summary_zh": "研究突触在记忆形成中的细胞和分子变化，使用电生理记录、生物化学/分子分析和成像技术。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "synaptic plasticity",
+    "memory formation",
+    "electrophysiological recording",
+    "biochemical/molecular analysis",
+    "imaging",
+    "homeostatic synaptic plasticity",
+    "alzheimer's disease",
+    "cross-modal plasticity"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Michael McCloskey",
+   "summary": "Studies reading, writing, and visual perception, using behavioral and neuroimaging methods to examine cognitive processes and deficits.",
+   "summary_zh": "研究阅读、书写和视觉感知，使用行为和神经影像学方法探讨认知过程和缺陷。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CHILDREN",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "reading",
+    "writing",
+    "visual perception",
+    "cognitive neuropsychology",
+    "neuroimaging",
+    "behavioral studies",
+    "deficits",
+    "neurotypical participants",
+    "computational modeling"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ernst Niebur",
+   "summary": "Studies the mechanisms that organize neural circuits during development.",
+   "summary_zh": "研究发育过程中神经回路的组织机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_PRIMATES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neural circuits",
+    "development",
+    "mechanisms",
+    "organization",
+    "cognitive neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Hanna Pickard",
+   "summary": "Explores philosophical questions arising from clinical practice, integrating addiction science, philosophy, and psychology.",
+   "summary_zh": "探讨临床实践中产生的哲学问题，将成瘾科学、哲学和心理学相结合。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_PATIENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "philosophy of mind",
+    "philosophy of psychiatry",
+    "moral psychology",
+    "addiction",
+    "responsibility without blame",
+    "criminal law",
+    "personality disorders"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Joshua Vogelstein",
+   "summary": "Studies patterns in physical and mental worlds, focusing on brain mechanisms and aligning them for better human and animal life.",
+   "summary_zh": "研究物理世界和心理世界中的模式，专注于大脑机制及其与人类和动物生活的更好协调。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "brain mechanisms",
+    "alignment",
+    "patterns",
+    "physical worlds",
+    "mental worlds"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kristina Nielsen",
+   "summary": "Studies the function and development of higher level visual cortex, using brain imaging techniques.",
+   "summary_zh": "研究高级视觉皮层的功能及其发展，使用脑成像技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "higher level visual cortex",
+    "function",
+    "development",
+    "brain imaging",
+    "cortex"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Veit Stuphorn",
+   "summary": "Studies decision-making processes using neurophysiological methods.",
+   "summary_zh": "使用神经生理学方法研究决策过程。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": []
+   },
+   "keywords": [
+    "decision-making",
+    "neurophysiological",
+    "processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kyle Rawlins",
+   "summary": "Studies formal semantics, pragmatics, and syntax, integrating theoretical linguistics, computational modeling, and experimental data.",
+   "summary_zh": "研究形式语义学、语用学和句法，结合理论语言学、计算建模和实验数据。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "formal semantics",
+    "pragmatics",
+    "syntax",
+    "computational semantics",
+    "philosophy of language",
+    "crowdsourcing",
+    "experimental linguistics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Mick Bonner",
+   "summary": "Studies the visual system of the human brain using computational methods and neuroimaging to understand how visual cortex representations are computed from sensory inputs.",
+   "summary_zh": "使用计算方法和神经成像研究人类大脑的视觉系统，理解视觉皮层如何从感官输入中生成表征。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "visual system",
+    "human brain",
+    "computational methods",
+    "neuroimaging",
+    "neural representations",
+    "sensory inputs",
+    "statistical methods",
+    "neural networks",
+    "deep learning"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "John T. Hale",
+   "summary": "Studies human language processing using computational modeling and neuroimaging.",
+   "summary_zh": "使用计算建模和神经成像研究人类语言处理。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "computational linguistics",
+    "neurolinguistics",
+    "corpus methods",
+    "psycholinguistics",
+    "human language processing"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jennifer Hu",
+   "summary": "Studies the computational principles of human language and communication, using computational modeling, behavioral experiments, and AI.",
+   "summary_zh": "研究人类语言和交流的计算原理，使用计算建模、行为实验和人工智能方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ML",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "computational linguistics",
+    "psycholinguistics",
+    "artificial intelligence",
+    "language processing",
+    "social cognition"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Annemarie Kocab",
+   "summary": "Studies how language emerges and is acquired, focusing on homesign systems, Nicaraguan Sign Language, and language comprehension in sign language users.",
+   "summary_zh": "研究语言的产生和习得，重点关注家庭手势系统、尼加拉瓜手语以及手语使用者的语言理解。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EEG_MEG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CHILDREN",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "language emergence",
+    "language acquisition",
+    "signed languages",
+    "homesign systems",
+    "eeg"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Géraldine Legendre",
+   "summary": "Studies the syntax and acquisition of syntax in adults and children, focusing on optimization theory and cross-linguistic variation.",
+   "summary_zh": "研究成人的句法和句法习得，重点是优化理论和跨语言变体。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "syntax",
+    "optimization theory",
+    "language acquisition",
+    "cross-linguistic variation",
+    "clitics",
+    "finiteness",
+    "modality",
+    "french",
+    "romance languages"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Colin Wilson",
+   "summary": "Studies phonology, phonetics, and computational models of speech perception and production across languages.",
+   "summary_zh": "研究音系学、语音学以及跨语言语音感知和生产的计算模型。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "phonology",
+    "phonetics",
+    "computational modeling",
+    "cross-language",
+    "perception",
+    "production"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Alan Yuille",
+   "summary": "Develops computational models of vision and mathematical models of cognition, integrating artificial intelligence and neural networks.",
+   "summary_zh": "开发视觉计算模型和认知数学模型，结合人工智能和神经网络。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "computational models of vision",
+    "mathematical models of cognition",
+    "artificial intelligence",
+    "neural networks",
+    "computer vision"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brance Amussen",
+   "summary": "Supports brain sciences organizational units in the Krieger School of Arts & Sciences.",
+   "summary_zh": "支持Krieger文理学院的脑科学组织单位。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_WORKERS_STUDENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "kit",
+    "技术支持",
+    "脑科学",
+    "krieger school",
+    "it支持"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Brendan Banyai",
+   "summary": "Studies language processing and semantics using cognitive neuroscience methods.",
+   "summary_zh": "使用认知神经科学方法研究语言处理和语义。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "language processing",
+    "semantics",
+    "cognitive neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Justin Bledin",
+   "summary": "Develops an informational view of logic and deductive inquiry, focusing on formal semantics, epistemology, and decision theory.",
+   "summary_zh": "发展逻辑和演绎推理的信息论观点，专注于形式语义学、认识论和决策理论。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "logic",
+    "formal semantics",
+    "epistemology",
+    "decision theory",
+    "rational choice theory"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Dana Boatman",
+   "summary": "Studies how the human brain perceives sounds in complex listening environments, using electrophysiology and computational modeling.",
+   "summary_zh": "研究人类大脑在复杂听觉环境中的声音感知机制，使用电生理学和计算建模方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_EEG_MEG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "auditory cortex",
+    "auditory neuroscience",
+    "cortical auditory disorders",
+    "electrophysiology",
+    "computational modeling"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "John E. Desmond",
+   "summary": "Studies the role of the cerebellum in cognition, particularly verbal working memory, using fMRI and TMS.",
+   "summary_zh": "研究小脑在认知中的作用，特别是口头工作记忆，使用功能性磁共振成像（fMRI）和经颅磁刺激（TMS）。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cerebellum",
+    "cognition",
+    "verbal working memory",
+    "fmri",
+    "tms",
+    "aging",
+    "neural correlates",
+    "clinical applications"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jason Eisner",
+   "summary": "Develops probabilistic models for linguistic structure and connects them to common-sense reasoning and AI applications.",
+   "summary_zh": "开发概率模型以构建语言结构，并将其与常识推理和AI应用相结合。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "probabilistic modeling",
+    "linguistic structure",
+    "common-sense reasoning",
+    "downstream user interfaces",
+    "ai algorithms"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Argye Hillis",
+   "summary": "Studies cognitive and neuroimaging recovery after right hemisphere stroke, focusing on language and cognitive functions.",
+   "summary_zh": "研究右半球中风后语言和认知功能的恢复机制及其神经影像学表现。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "stroke",
+    "cognitive recovery",
+    "language recovery",
+    "right hemisphere",
+    "neuroimaging"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brice Ménard",
+   "summary": "Studies the physics of learning and properties of neural networks in artificial and biological systems, combining physics and machine learning.",
+   "summary_zh": "研究学习的物理原理和神经网络（人工和生物）的性质，结合物理学和机器学习。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ML",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neural networks",
+    "machine learning",
+    "physics",
+    "astrophysics",
+    "artificial systems",
+    "biological systems"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Tianmin Shu",
+   "summary": "Studies machine social intelligence, developing AI agents that understand, reason about, and interact with humans in complex environments.",
+   "summary_zh": "研究机器社会智能，构建能够理解、推理和与人类在复杂环境中互动的AI代理。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_WORK",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "machine social intelligence",
+    "ai agents",
+    "human-robot interaction",
+    "social cognition",
+    "embodied experiences",
+    "world modeling",
+    "multimodal theory of mind",
+    "cooperation",
+    "continual learning"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kyrana Tsapkini",
+   "summary": "Studies the interactions between language and cognitive systems in post-stroke and primary progressive aphasia using brain imaging and stimulation techniques.",
+   "summary_zh": "研究语言和认知系统在中风后和进行性失语症中的相互作用，使用脑成像和刺激技术。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "primary progressive aphasia",
+    "post-stroke aphasia",
+    "tdcs",
+    "fmri",
+    "dti",
+    "mr spectroscopy",
+    "language therapy",
+    "neurolinguistic",
+    "brain imaging"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Benjamin Van Durme",
+   "summary": "Develops algorithms for natural language processing and understanding, focusing on helping people work with large amounts of information.",
+   "summary_zh": "开发自然语言处理和理解的算法，帮助人们处理大量信息。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ML",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "natural language processing",
+    "semantics",
+    "algorithms",
+    "information retrieval",
+    "machine learning"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Alex Lu",
+   "summary": "Develops machine learning methods to analyze biological images, aiming to uncover subtle patterns in data.",
+   "summary_zh": "开发机器学习方法分析生物图像，旨在揭示数据中的细微模式。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ML",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_MACHINES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "machine learning",
+    "biological images",
+    "self-supervised learning",
+    "patterns",
+    "data analysis"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Jeremy Purcell",
+   "summary": "Develops and applies novel methods to analyze local neural representational differentiation, focusing on written language.",
+   "summary_zh": "开发和应用新型方法分析局部神经表征差异，重点研究书面语言的神经基础。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "written language",
+    "neural representational differentiation",
+    "neuroimaging",
+    "local-hreg",
+    "cognitive science"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Sue Potterfield",
+   "summary": "Studies cognitive processes using budget analysis methods.",
+   "summary_zh": "使用预算分析方法研究认知过程。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [
+     {
+      "code": "A_STATS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "budget analysis"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Charlie Ainsworth",
+   "summary": "Studies sign language creation and learning, focusing on language acquisition and development.",
+   "summary_zh": "研究手语的创造与学习，关注语言习得与发展。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "sign language",
+    "language acquisition",
+    "language creation",
+    "learning",
+    "development"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Donovan Catt",
+   "summary": "Studies sign language creation and learning, focusing on linguistic structures and processes.",
+   "summary_zh": "研究手语的创造与学习，关注语言结构和过程。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "sign language",
+    "linguistics",
+    "language creation",
+    "language learning",
+    "linguistic structures"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ronak Elias",
+   "summary": "Studies cognitive neuroscience and neuroplasticity in development using computational methods.",
+   "summary_zh": "研究发展认知神经科学和神经可塑性，使用计算方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive neuroscience",
+    "neuroplasticity",
+    "development",
+    "computational methods"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Lissette Gonzalez",
+   "summary": "Studies how children learn language and understand space using games and activities.",
+   "summary_zh": "研究儿童如何通过游戏和活动学习语言和空间概念。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "language learning",
+    "space understanding",
+    "children",
+    "games",
+    "activities"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  }
+ ]
+}

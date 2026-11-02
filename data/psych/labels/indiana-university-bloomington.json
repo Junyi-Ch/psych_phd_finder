@@ -1,0 +1,5465 @@
+{
+ "slug": "indiana-university-bloomington",
+ "labeled_at": "2026-10-30",
+ "faculty": [
+  {
+   "name": "Joshua Brown",
+   "summary": "Studies cognitive control and decision-making in complex environments, using computational models and fMRI.",
+   "summary_zh": "研究复杂环境中的认知控制和决策机制，使用计算模型和功能性磁共振成像（fMRI）。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DECISION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive control",
+    "computational models",
+    "fmri",
+    "working memory",
+    "decision-making"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jerome Busemeyer",
+   "summary": "Studies decision-making processes and preferences using computational models and cognitive theories.",
+   "summary_zh": "研究决策过程和偏好，使用计算模型和认知理论。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "decision-making",
+    "computational models",
+    "cognitive theories",
+    "preferences",
+    "learning models"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Thomas Busey",
+   "summary": "Studies visual perception, recognition memory, and face recognition using EEG analysis and mathematical modeling.",
+   "summary_zh": "研究视觉感知、识别记忆和面孔识别，使用EEG分析和数学建模方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EEG_MEG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "visual perception",
+    "recognition memory",
+    "face recognition",
+    "eeg analysis",
+    "mathematical modeling"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Natasha Chaku",
+   "summary": "Studies cognitive development in adolescence, using intensive longitudinal assessments and physiological data to understand individual differences in executive functioning.",
+   "summary_zh": "研究青少年的认知发展，使用密集纵向评估和生理数据来理解执行功能的个体差异。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_PHYSIOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_LONGITUDINAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADOLESCENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "adolescence",
+    "cognitive development",
+    "executive functioning",
+    "longitudinal assessments",
+    "puberty",
+    "person-centered approaches",
+    "adolescent behavior"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Hu Cheng",
+   "summary": "Studies brain networks using diffusion tensor imaging and fMRI, focusing on structural connectivity and network topology.",
+   "summary_zh": "研究大脑网络，使用扩散张量成像和fMRI，关注结构连接性和网络拓扑结构。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "structural network",
+    "diffusion tensor imaging",
+    "fmri",
+    "tractography",
+    "graph theoretical analysis"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jonathon Crystal",
+   "summary": "Studies animal models of episodic and prospective memory to understand cognitive impairments and develop treatments.",
+   "summary_zh": "研究动物模型的事件记忆和前瞻性记忆，以理解认知障碍并开发治疗方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": []
+   },
+   "keywords": [
+    "episodic memory",
+    "prospective memory",
+    "animal models",
+    "cognitive impairments",
+    "memory disorders"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brian D'Onofrio",
+   "summary": "Studies the etiology, assessment, and treatment of behavioral health problems, using epidemiologic methods, longitudinal studies, and intervention research.",
+   "summary_zh": "研究行为健康问题的病因、评估和治疗方法，使用流行病学方法、纵向研究和干预研究。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_STATS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_LONGITUDINAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "behavioral health problems",
+    "epidemiologic methods",
+    "longitudinal studies",
+    "intervention research",
+    "health disparities",
+    "developmental psychopathology",
+    "pharmacoepidemiology",
+    "genetic epidemiology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Simon Davis",
+   "summary": "Studies the neurobiology of aging, focusing on cognitive changes with age.",
+   "summary_zh": "研究衰老的神经生物学，关注随年龄变化的认知变化。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_AGING",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "aging",
+    "cognitive changes",
+    "neurobiology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Amanda Diekman",
+   "summary": "Studies gender roles and their influence on social roles and motivation, particularly in STEM fields.",
+   "summary_zh": "研究性别角色及其对社会角色和动机的影响，特别是在STEM领域。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_WORK",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CROSS_CULTURAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "gender roles",
+    "motivation",
+    "stem",
+    "social roles",
+    "intergroup relations",
+    "affordance beliefs",
+    "communal goals"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Joseph Farley",
+   "summary": "Studies the cellular and molecular bases of associative learning and memory, focusing on changes in ion channels and their contributions to learning in invertebrates and mammals.",
+   "summary_zh": "研究关联学习和记忆的细胞和分子基础，重点关注离子通道的变化及其在无脊椎动物和哺乳动物中的贡献。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "associative learning",
+    "ion channels",
+    "molecular mechanisms",
+    "memory",
+    "neural plasticity",
+    "excitable membranes",
+    "invertebrates",
+    "mammals",
+    "ltp",
+    "protein kinase c"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Debra Finn",
+   "summary": "Studies how working memory and externalizing psychopathology affect decision-making, particularly in young adults.",
+   "summary_zh": "研究工作记忆和外部化心理障碍如何影响决策，特别是在年轻人中的表现。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "working memory",
+    "delay discounting",
+    "externalizing psychopathology",
+    "young adults",
+    "alcohol use"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Emily Fyfe",
+   "summary": "Studies how children learn mathematics, using behavioral experiments and error analyses to understand cognitive development and learning processes.",
+   "summary_zh": "研究儿童如何学习数学，通过行为实验和错误分析来理解认知发展和学习过程。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_EDUCATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "mathematics education",
+    "cognitive development",
+    "math cognition",
+    "learning and transfer",
+    "problem solving",
+    "behavioral experiments",
+    "error analyses",
+    "children",
+    "mathematics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Preston Garraghty",
+   "summary": "Studies cognitive processes and brain mechanisms using neuroimaging techniques.",
+   "summary_zh": "研究认知过程和脑机制，使用神经成像技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "brain mechanisms",
+    "neuroimaging",
+    "neuroscience",
+    "psychological and brain sciences"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jason Gold",
+   "summary": "Studies how visual patterns are processed after initial sensory encoding, focusing on perceptual learning, face recognition, and visual memory.",
+   "summary_zh": "研究视觉模式在初始感觉编码之后的处理过程，重点在于知觉学习、面孔识别和视觉记忆。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_PSYCHOPHYSICS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perceptual learning",
+    "face recognition",
+    "visual memory",
+    "psychophysics",
+    "pattern vision",
+    "perceptual grouping",
+    "ideal observer theory"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Robert Goldstone",
+   "summary": "Studies how context influences category learning and perception, using computational models and cognitive science methods.",
+   "summary_zh": "研究上下文如何影响类别学习和知觉，使用计算模型和认知科学方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "category learning",
+    "perception",
+    "computational models",
+    "cognitive science",
+    "context",
+    "group cognition"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Dorainne Green",
+   "summary": "Studies how social identity threat affects cognitive, psychological, and physiological outcomes, using experimental and longitudinal methods.",
+   "summary_zh": "研究社会身份威胁如何影响认知、心理和生理结果，采用实验和纵向方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_LONGITUDINAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "social identity threat",
+    "stereotype threat",
+    "cognitive outcomes",
+    "physiological outcomes",
+    "emotional regulation",
+    "stress",
+    "education",
+    "intergroup relations",
+    "learning goals",
+    "performance goals"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Elizabeth Gunderson",
+   "summary": "Studies how children learn words from social cues, using eye-tracking and looking-time experiments with infants.",
+   "summary_zh": "研究婴儿如何通过社会线索学习单词，使用眼动追踪和注视时间实验。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EYE_TRACKING",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "children",
+    "word learning",
+    "social cues",
+    "eye-tracking",
+    "looking-time",
+    "infants"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Norbert Hajos",
+   "summary": "Studies the types and circuits of interneurons in the basolateral amygdala, using electrophysiology and imaging techniques.",
+   "summary_zh": "研究小鼠基底外侧杏仁核中不同类型抑制性神经元及其环路，使用电生理和成像技术。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "interneurons",
+    "basolateral amygdala",
+    "circuits",
+    "gabaergic",
+    "electrophysiology",
+    "imaging",
+    "mouse",
+    "vip",
+    "basket cells"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "William Hetrick",
+   "summary": "Studies global mental health and clinical neuroscience in East Africa, focusing on WEIRD science issues and developing clinical research infrastructure.",
+   "summary_zh": "研究东非的精神健康和临床神经科学，关注 WEIRD 科学问题并发展临床研究基础设施。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_EEG_MEG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "global mental health",
+    "clinical neuroscience",
+    "east africa",
+    "weird science",
+    "eeg methods",
+    "cross-cultural psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Edward Hirt",
+   "summary": "Studies how perceptions of mental depletion affect self-control and performance, with a focus on self-handicapping and mood effects.",
+   "summary_zh": "研究心理耗竭的感知如何影响自我控制和表现，重点关注自我设障和情绪效应。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MOTIVATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "mental depletion",
+    "self-control",
+    "self-handicapping",
+    "performance",
+    "mood effects",
+    "working memory",
+    "perceptions",
+    "cognition",
+    "social judgment",
+    "creativity"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Andrea Hohmann",
+   "summary": "Studies the endocannabinoid system and its role in pain and anxiety, using pharmacological inhibitors and animal models.",
+   "summary_zh": "研究内源性大麻素系统在疼痛和焦虑中的作用，使用药理学抑制剂和动物模型。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "endocannabinoid system",
+    "pain",
+    "anxiety",
+    "chemotherapy",
+    "neuropathy",
+    "pharmacological inhibitors",
+    "rodents",
+    "neuroscience",
+    "cannabinoid cb2 receptor",
+    "chemotherapy-induced peripheral neuropathy"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kurt Hugenberg",
+   "summary": "Studies how stereotypes and prejudices influence perceptions of others' minds and bodies, using face and body cues.",
+   "summary_zh": "研究刻板印象和偏见如何影响对他人心理和身体的感知，利用面部和身体线索。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "stereotypes",
+    "prejudices",
+    "face processing",
+    "body cues",
+    "minds",
+    "social groups",
+    "perceptions",
+    "judgments",
+    "race"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Tom James",
+   "summary": "Studies the neural mechanisms of human object recognition using functional MRI and psychophysics, integrating visual, somatosensory, and auditory perception.",
+   "summary_zh": "研究人类物体识别的神经机制，使用功能性磁共振成像和心理物理学，整合视觉、本体感觉和听觉感知。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_PSYCHOPHYSICS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "object recognition",
+    "functional mri",
+    "psychophysics",
+    "perceptual decision making",
+    "sensory integration",
+    "visual perception",
+    "somatosensory",
+    "auditory perception"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Karin James",
+   "summary": "Studies how motor experience influences visual recognition in adults and children, using behavioral methods and fMRI.",
+   "summary_zh": "研究运动经验如何影响成人和儿童的视觉识别，使用行为方法和功能性磁共振成像。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "motor experience",
+    "visual recognition",
+    "fmri",
+    "adults",
+    "children",
+    "learning",
+    "cognition"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Mike Jones",
+   "summary": "Studies semantic memory and its representations using distributional models and high-dimensional semantic spaces.",
+   "summary_zh": "研究语义记忆及其表示，使用分布模型和高维语义空间。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "semantic memory",
+    "distributional models",
+    "high-dimensional semantic spaces",
+    "word meaning",
+    "lexicon"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Daniel Kennedy",
+   "summary": "Studies gaze patterns and social attention in autism spectrum disorder using eye-tracking and functional connectivity methods.",
+   "summary_zh": "研究自闭症谱系障碍中的凝视模式和社会注意力，使用眼动追踪和功能性连接方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "autism spectrum disorder",
+    "eye-tracking",
+    "functional connectivity",
+    "social attention",
+    "amygdala",
+    "gaze patterns"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Anne Krendl",
+   "summary": "Studies social cognition and aging using functional MRI, focusing on how stigma and stereotypes affect older adults.",
+   "summary_zh": "研究社会认知和老化，使用功能性磁共振成像（fMRI）探讨刻板印象和偏见如何影响老年人。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_OLDER_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "social cognition",
+    "aging",
+    "stigma",
+    "functional mri",
+    "stereotyping",
+    "prejudice",
+    "alzheimer's disease",
+    "impression formation",
+    "theory of mind"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Lorenzo Lorenzo-Luaces",
+   "summary": "Studies personalized medicine in cognitive-behavioral therapy (CBT) for depression, using machine learning and risk stratification.",
+   "summary_zh": "研究认知行为疗法（CBT）在抑郁症个性化治疗中的应用，使用机器学习和风险分层方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_ML",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "personalized medicine",
+    "cognitive-behavioral therapy",
+    "depression",
+    "machine learning",
+    "risk stratification",
+    "therapeutic alliance",
+    "outcome prediction"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Hui-Chen Lu",
+   "summary": "Studies how neuronal circuits are fine-tuned during brain development and how genetic and environmental factors affect neural wiring and behavior.",
+   "summary_zh": "研究神经回路在大脑发育期间如何精细调节以及遗传和环境因素如何影响神经回路的建立和行为。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuronal circuits",
+    "neurodevelopment",
+    "mglur5",
+    "endocannabinoid system",
+    "nmnat2",
+    "neuroprotection",
+    "neurodegeneration",
+    "autism",
+    "schizophrenia",
+    "ad"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kenneth Mackie",
+   "summary": "Studies the effects of cannabinoids on pain and memory, using mouse models and organoids.",
+   "summary_zh": "研究大麻素对疼痛和记忆的影响，使用小鼠模型和类器官。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cannabinoids",
+    "pain",
+    "memory",
+    "organoids",
+    "mouse models"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ben Motz",
+   "summary": "Studies cognitive processes, particularly memory and attention, using computational models and behavioral experiments.",
+   "summary_zh": "研究认知过程，特别是记忆和注意力，使用计算模型和行为实验。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "memory",
+    "attention",
+    "computational models",
+    "behavioral experiments",
+    "cognitive processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Alexandra Moussa-Tooks",
+   "summary": "Studies cognitive processes and brain mechanisms using neuroimaging techniques.",
+   "summary_zh": "使用神经成像技术研究认知过程和大脑机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "neuroimaging",
+    "brain mechanisms"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ehren Newman",
+   "summary": "Studies the role of cholinergic modulation on grid cell properties and cognitive processing in the brain.",
+   "summary_zh": "研究乙酰胆碱调节在网格细胞功能和认知处理中的作用。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "grid cell",
+    "cholinergic modulation",
+    "theta frequency",
+    "cognitive processing",
+    "hippocampus",
+    "neural network",
+    "learning",
+    "memory"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Robert Nosofsky",
+   "summary": "Studies how people categorize objects and recognize them, using models and neural network simulations.",
+   "summary_zh": "研究人们如何分类和识别物体，使用模型和神经网络模拟。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_CONCEPTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "categorization",
+    "recognition",
+    "exemplar-based",
+    "neural network",
+    "psychological feature space",
+    "random-walk model"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "N. Bonnie Nozari",
+   "summary": "Studies cognitive processes and brain mechanisms using neuroimaging techniques.",
+   "summary_zh": "研究认知过程和大脑机制，使用神经成像技术。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "neuroimaging",
+    "brain mechanisms"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "David Pisoni",
+   "summary": "Studies the earliest stages of speech perception, focusing on how acoustic-phonetic information interacts with lexical knowledge to support spoken word recognition and spoken language processing.",
+   "summary_zh": "研究语音感知的早期阶段，探讨声学-音位信息如何与词汇知识相互作用，以支持语音单词识别和口语语言处理。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_BIRDS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "speech perception",
+    "spoken word recognition",
+    "mental lexicon",
+    "perceptual learning",
+    "working memory",
+    "individual differences",
+    "phonological coding"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Tim Pleskac",
+   "summary": "Studies decision-making processes, particularly in risky environments and police decision-making, using models of evidence accumulation.",
+   "summary_zh": "研究决策过程，特别是在风险环境和警察决策中的过程，使用证据积累的模型。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_WORK",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "decision-making",
+    "evidence accumulation",
+    "risk",
+    "police decisions",
+    "models",
+    "confidence",
+    "choice",
+    "risk-reward environments"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Lauren Rutter",
+   "summary": "Studies cognitive and emotional phenotypes that increase risk for internalizing psychopathology and cognitive aging, using experience sampling and natural language processing techniques.",
+   "summary_zh": "研究增加内化心理障碍风险的认知和情绪表型，使用体验抽样和自然语言处理技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_SURVEY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_DAILY_LIFE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_EDUCATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADOLESCENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "internalizing psychopathology",
+    "cognitive aging",
+    "affect dynamics",
+    "cognitive performance",
+    "cognitive distortions",
+    "experience sampling",
+    "natural language processing",
+    "web-based samples",
+    "adolescence"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Robert Rydell",
+   "summary": "Studies the effects of stereotype threat on learning and performance, and the differences between implicit and explicit attitudes.",
+   "summary_zh": "研究刻板印象威胁对学习和表现的影响以及隐性态度与显性态度之间的差异。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ATTENTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MOTIVATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "stereotype threat",
+    "learning",
+    "performance",
+    "attitude formation",
+    "attitude change",
+    "implicit-explicit attitudes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Dale Sengelaub",
+   "summary": "Studies hormonal control of neural development and sex differences in the nervous system, using various species and anatomical techniques.",
+   "summary_zh": "研究激素对神经发育的控制以及神经系统中的性别差异，使用多种物种和解剖学技术。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_PHYSIOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_INFANTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "hormonal control",
+    "neural development",
+    "sex differences",
+    "neuroplasticity",
+    "steroid hormones",
+    "motoneurons",
+    "dendritic growth",
+    "spinal cord",
+    "adult neuron morphology",
+    "sexually dimorphic systems"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Richard Shiffrin",
+   "summary": "Studies recognition memory and visual perception, using associative recognition and stochastic stimuli.",
+   "summary_zh": "研究识别记忆和视觉感知，使用关联识别和随机刺激。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "recognition memory",
+    "visual perception",
+    "associative recognition",
+    "stochastic stimuli",
+    "visual search"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Linda Smith",
+   "summary": "Studies cognitive processes, particularly memory and attention, using behavioral experiments and neuroimaging.",
+   "summary_zh": "研究认知过程，特别是记忆和注意力，使用行为实验和神经成像技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "memory",
+    "attention",
+    "behavioral experiments",
+    "neuroimaging",
+    "cognitive processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Olaf Sporns",
+   "summary": "Studies brain connectivity and networks, including anatomical and functional brain connectivity, using computational and network techniques.",
+   "summary_zh": "研究大脑连接性和网络，包括解剖和功能大脑连接性，使用复杂系统和网络技术。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "brain connectivity",
+    "network neuroscience",
+    "connectomics",
+    "anatomical and functional brain connectivity",
+    "computational neuroscience",
+    "complex systems",
+    "networks"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Wei Tang",
+   "summary": "Studies cognitive processes and brain mechanisms using computational models and neuroimaging techniques.",
+   "summary_zh": "使用计算模型和神经影像技术研究认知过程和大脑机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "neuroimaging",
+    "computational models"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Peter Todd",
+   "summary": "Studies cognitive search processes in memory and decision-making, using neural and computational methods.",
+   "summary_zh": "研究记忆和决策中的认知搜索过程，使用神经和计算方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive search",
+    "memory",
+    "decision-making",
+    "neural",
+    "computational"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jennifer Trueblood",
+   "summary": "Studies decision-making under uncertainty, using behavioral experiments and computational models.",
+   "summary_zh": "研究不确定性下的决策，使用行为实验和计算模型。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "decision-making",
+    "uncertainty",
+    "behavioral experiments",
+    "computational models"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Richard Viken",
+   "summary": "Studies the genetic and environmental factors influencing adolescent behavior problems and adult outcomes such as alcohol abuse, and the cognitive processing related to clinical problems like alcohol.",
+   "summary_zh": "研究基因和环境因素对青少年行为问题以及成年期酒精滥用等结果的影响，并探讨与临床问题如酒精滥用和性侵犯相关的认知处理机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_GENETICS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "adolescent behavior",
+    "alcohol abuse",
+    "behavior genetics",
+    "cognitive processing",
+    "genetic epidemiology",
+    "family process",
+    "individual differences",
+    "clinical psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Cara Wellman",
+   "summary": "Studies the effects of chronic stress on neural activity and dendritic morphology in the prefrontal cortex and hippocampus, using animal models.",
+   "summary_zh": "研究慢性应激对前额叶皮层和海马神经活动和树突形态的影响，使用动物模型。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "chronic stress",
+    "prefrontal cortex",
+    "hippocampus",
+    "dendritic morphology",
+    "animal models",
+    "neural activity"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Krista Wisner",
+   "summary": "Studies neural mechanisms underlying symptoms of psychosis and substance use with neuroimaging and novel paradigms, focusing on the insular cortex.",
+   "summary_zh": "研究精神分裂症和物质使用障碍的症状背后的神经机制，使用神经成像和新型范式，重点关注岛叶皮层。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "psychosis",
+    "substance use",
+    "insular cortex",
+    "neuroimaging",
+    "stress reactivity",
+    "interoception",
+    "trauma",
+    "sex differences"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ann-Sophie Barwich",
+   "summary": "Studies the sense of smell as a model for mind and brain, focusing on the temporal integration of sensory and cognitive features in odor responses using EEG and olfactometry.",
+   "summary_zh": "研究嗅觉作为心智和大脑模型，关注气味感知中感觉和认知特征的时间整合，使用EEG和嗅觉测量技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_EEG_MEG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_PSYCHOPHYSICS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "olfaction",
+    "eeg",
+    "olfactometry",
+    "perceptual objecthood",
+    "subjectivity",
+    "cognition",
+    "philosophy",
+    "sensory integration",
+    "cognitive science",
+    "neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Randall Beer",
+   "summary": "Studies how agents learn and act in complex environments, using computational models and robotics.",
+   "summary_zh": "研究智能体在复杂环境中的学习与行为，使用计算模型和机器人技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_MACHINES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "agents",
+    "learning",
+    "complex environments",
+    "computational models",
+    "robotics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Erica Cartmill",
+   "summary": "Studies the acquisition and evolution of human language, focusing on gesture and its role in communication and cognitive development.",
+   "summary_zh": "研究人类语言的获得与进化，重点关注手势在交流和认知发展中的作用。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_PRIMATES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "human language",
+    "gesture",
+    "communication",
+    "cognitive development",
+    "orangutan",
+    "parent-infant interaction",
+    "spontaneous interaction",
+    "multimodality"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Luis H. Favela",
+   "summary": "Explores the philosophical and historical foundations of cognitive science.",
+   "summary_zh": "探索认知科学的哲学和历史基础。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "philosophy",
+    "cognitive science",
+    "history",
+    "science and medicine",
+    "graduate studies"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Andrew Goldman",
+   "summary": "Studies improvisation in music and dance, using behavioral, perceptual, and neuroscientific methods.",
+   "summary_zh": "研究音乐和舞蹈中的即兴创作，使用行为、感知和神经科学方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EEG_MEG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "improvisation",
+    "music cognition",
+    "neuroscience",
+    "behavioral methods",
+    "perceptual methods",
+    "eeg",
+    "dance"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "William Holmes",
+   "summary": "Models complex systems using PDEs, dynamical systems, and Bayesian methods, with applications in mathematical biology and psychology.",
+   "summary_zh": "使用偏微分方程、动力系统和贝叶斯方法建模复杂系统，应用于数学生物学和心理学。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "pde",
+    "dynamical systems",
+    "bayesian modeling",
+    "mathematical biology",
+    "mathematical psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Randall D. Beer",
+   "summary": "Studies technologies shaping the digital age, including AI, cybersecurity, health informatics, robotics, and human-centered computing.",
+   "summary_zh": "研究塑造数字时代的科技，包括人工智能、网络安全、健康信息技术、机器人技术和以人为本的计算。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ML",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "ai",
+    "cybersecurity",
+    "health informatics",
+    "robotics",
+    "human-centered computing"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "John M. Beggs",
+   "summary": "Studies how neural networks organize themselves into metastable states and operate near critical points, using biophysics and computational models.",
+   "summary_zh": "研究神经网络如何组织成亚稳态并接近临界点，使用生物物理学和计算模型。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neural networks",
+    "metastable states",
+    "critical point",
+    "biophysics",
+    "computational models"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Gavin Bidelman",
+   "summary": "Studies how sound and music affect the brain, using auditory cognitive neuroscience techniques.",
+   "summary_zh": "研究声音和音乐如何影响大脑，采用听觉认知神经科学方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "auditory cognitive neuroscience",
+    "sound",
+    "music",
+    "brain",
+    "neuroscience",
+    "cognition"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kathryn Bonnen",
+   "summary": "Studies 3D vision, sensorimotor processing related to walking and eye movements, and visual encoding.",
+   "summary_zh": "研究三维视觉、与行走和眼球运动相关的传感器运动处理以及视觉编码。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "3d vision",
+    "sensorimotor processing",
+    "walking",
+    "eye movements",
+    "visual encoding"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Stephen A. Burns",
+   "summary": "Studies the impact of retinal disease on retinal structure and function, and the control of blood flow in the retina.",
+   "summary_zh": "研究视网膜疾病对视网膜结构和功能的影响，以及视网膜血流的控制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "retinal disease",
+    "retinal structure",
+    "blood flow",
+    "retina"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "T. Rowan Candy",
+   "summary": "Studies visual development during infancy and early childhood, ocular motor performance, and vision.",
+   "summary_zh": "研究婴儿和幼儿的视觉发展、眼动性能和视觉。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "visual development",
+    "ocular motor performance",
+    "vision",
+    "infancy",
+    "amblyopia"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Gregory E. Demas",
+   "summary": "Studies neuroendocrine-immune interactions and seasonal changes in immunity in rodents, using melatonin, hormones, and behavioral tests.",
+   "summary_zh": "研究神经内分泌-免疫相互作用和季节性免疫变化在啮齿动物中的作用，使用褪黑激素、激素和行为测试。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuroendocrine-immune interactions",
+    "melatonin",
+    "hormones",
+    "rodents",
+    "behavioral tests",
+    "seasonal changes",
+    "immunity"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Silvina Ferradal",
+   "summary": "Studies neuroengineering and neuroimaging, using magnetic resonance imaging to design biomedical systems.",
+   "summary_zh": "从事神经工程和神经成像研究，使用磁共振成像设计生物医学系统。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuroengineering",
+    "neuroimaging",
+    "magnetic resonance imaging",
+    "biomedical systems",
+    "engineering"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kess Folco",
+   "summary": "Studies neural mechanisms of motor control and learning, using computational models and behavioral experiments.",
+   "summary_zh": "研究运动控制和学习的神经机制，使用计算模型和行为实验。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "motor control",
+    "learning",
+    "computational models",
+    "behavioral experiments",
+    "neural mechanisms"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "María de la Paz Fernandez",
+   "summary": "Studies the neuronal basis of sex differences in circadian clock network organization and function using Drosophila, combining genetics, imaging, and behavioral assays.",
+   "summary_zh": "研究节律钟网络中性别差异的神经基础，使用果蝇结合遗传学、成像和行为实验方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_FISH_INVERT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "circadian clock",
+    "neuronal connectivity",
+    "drosophila",
+    "behavioral assays",
+    "genetics",
+    "neuroscience",
+    "development",
+    "sex differences"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Eleftherios Garyfallidis",
+   "summary": "Studies brain systems for behavior using engineering and computing techniques.",
+   "summary_zh": "使用工程和计算技术研究大脑系统对行为的作用。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "brain systems",
+    "behavior",
+    "engineering",
+    "computing",
+    "neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Feng Guo",
+   "summary": "Studies cognitive and computational aspects of brain function, using intelligent systems engineering methods.",
+   "summary_zh": "研究认知和计算方面的脑功能，使用智能系统工程方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive",
+    "computational",
+    "brain function",
+    "intelligent systems",
+    "engineering"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Samantha Gustafson",
+   "summary": "Studies communication challenges in school-age children with and without hearing loss, using subjective, behavioral, and electrophysiologic methods.",
+   "summary_zh": "研究学龄儿童（包括听力障碍儿童）的沟通挑战，使用主观、行为和电生理方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "communication challenges",
+    "school-age children",
+    "hearing loss",
+    "listening effort",
+    "attention allocation",
+    "intervention",
+    "hearing aids",
+    "remote microphones"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Laura Hurley",
+   "summary": "Studies how serotonin-auditory interactions filter important information in mice, using electrophysiology and behavioral analysis.",
+   "summary_zh": "研究血清素-听觉相互作用如何过滤重要信息，使用电生理学和行为分析方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "serotonin",
+    "auditory system",
+    "mice",
+    "electrophysiology",
+    "behavioral context"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Andrea Parolin Jackowski",
+   "summary": "Studies the impact of early life adversities on brain development and mental health, using neuroimaging and clinical trials.",
+   "summary_zh": "研究早期生活逆境对大脑发育和心理健康的影响，使用神经成像和临床试验方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "early life adversities",
+    "mental health",
+    "neurodevelopment",
+    "neuroimaging",
+    "clinical trial"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Blair Johnson",
+   "summary": "Studies cognitive and computational processes, focusing on behavioral and translational research.",
+   "summary_zh": "研究认知和计算过程，侧重于行为和转化研究。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive",
+    "computational",
+    "behavioral",
+    "translational",
+    "processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jorge V. José",
+   "summary": "Studies theoretical neuroscience, focusing on the physics of neural systems.",
+   "summary_zh": "研究神经科学的理论，专注于神经系统的物理机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuroscience",
+    "theoretical",
+    "physics",
+    "neural systems"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Keisuke Kawata",
+   "summary": "Studies the neural mechanisms of motor control and learning, using computational models and neuroimaging.",
+   "summary_zh": "研究运动控制和学习的神经机制，使用计算模型和神经成像技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "motor control",
+    "learning",
+    "neural mechanisms",
+    "computational models",
+    "neuroimaging"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "David M. Koceja",
+   "summary": "Studies neuromuscular control of human movement, focusing on the mechanisms underlying movement coordination and control.",
+   "summary_zh": "研究人类运动的神经肌肉控制机制，关注运动协调和控制的生理基础。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neuromuscular control",
+    "human movement",
+    "movement coordination",
+    "control mechanisms"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Sachiko Koya",
+   "summary": "Studies how social environment affects physiological conditions and behaviors through pheromones and social status in mice and humans, focusing on neurogenesis.",
+   "summary_zh": "研究社会环境如何通过气味分子和社会地位影响生理状态和行为，重点关注神经发生。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_INFANTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_RODENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_HUMANS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "pheromone",
+    "social status",
+    "neurogenesis",
+    "mice",
+    "olfactory system",
+    "apodemus argenteus",
+    "sperm activity",
+    "olfactory learning",
+    "developmental psychology",
+    "cell biology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Joo Yeun Lee",
+   "summary": "Studies visual neuroscience, focusing on retinal circuits and synaptic integration, using electrophysiology and high-resolution imaging.",
+   "summary_zh": "从事视觉神经科学研究，关注视网膜电路和突触整合，使用电生理学和高分辨率成像技术。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_COMP_MODEL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "retinal circuits",
+    "synaptic integration",
+    "electrophysiology",
+    "high-resolution imaging",
+    "visual neuroscience"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jennifer J. Lentz",
+   "summary": "Studies auditory perception in listeners with normal hearing and hearing loss, developing tools to diagnose and characterize tinnitus.",
+   "summary_zh": "研究正常听力和听力损失听者的听觉感知，开发诊断和表征耳鸣的工具。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "auditory perception",
+    "hearing loss",
+    "tinnitus",
+    "hearing aid algorithms",
+    "psychoacoustics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Steven Lulich",
+   "summary": "Studies speech production and modeling using 3D/4D ultrasound imaging techniques to explore the intersection of anatomy, articulation, acoustics, and aerodynamics.",
+   "summary_zh": "研究语音产生和建模，使用3D/4D超声成像技术探索解剖学、发音、声学和气动学之间的交集。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "speech production",
+    "3d/4d ultrasound",
+    "articulation",
+    "acoustics",
+    "aerodynamics",
+    "phonological systems",
+    "speech disorders",
+    "ultrasound imaging",
+    "phonology",
+    "phonetics"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Stephanie Mauthner",
+   "summary": "Studies genetic and cellular mechanisms in development.",
+   "summary_zh": "研究发育过程中的基因和细胞机制。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "genetic",
+    "cell",
+    "developmental biology"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Melissa M. Pangelinan",
+   "summary": "Develops and measures the efficacy of physical activity interventions on neurocognitive and physical health outcomes in children, adolescents, and adults with intellectual and developmental.",
+   "summary_zh": "开发和评估针对智力和发育障碍儿童、青少年和成人的体育活动干预措施对神经认知和身体健康结果的有效性。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "physical activity",
+    "neurocognitive",
+    "health outcomes",
+    "intellectual disabilities",
+    "developmental disabilities",
+    "interventions",
+    "children",
+    "adults"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Rob Potter",
+   "summary": "Studies the effects of audio and music on emotion and social interactions using psychophysiology.",
+   "summary_zh": "研究音频和音乐对情绪及社会互动的影响，使用生理心理学方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_EMOTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "audio",
+    "music",
+    "psychophysiology",
+    "social neuroscience",
+    "emotion"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kimberly Rosvall",
+   "summary": "Studies the genomic and physiological bases of behavioral adaptation and plasticity in free-living birds, using a combination of animal behavior, neuroendocrinology, evolutionary ecology, physiology.",
+   "summary_zh": "研究自由生活的鸟类的行为适应性和可塑性的基因和生理基础，结合动物行为学、神经内分泌学、进化生态学、生理学和基因组学的方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_PHYSIOLOGY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_BIRDS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "genomic",
+    "physiological",
+    "behavioral adaptation",
+    "plasticity",
+    "free-living birds",
+    "animal behavior",
+    "neuroendocrinology",
+    "evolutionary ecology",
+    "physiology",
+    "genomics"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "G. Troy Smith",
+   "summary": "Studies how the nervous system controls rhythmic behavior and how hormones influence neural physiology to modify behavior in weakly electric fish.",
+   "summary_zh": "研究神经系统如何控制节律行为以及激素如何影响神经生理学以改变行为，特别是在弱电鱼中的研究。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ANIMAL_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_FISH_INVERT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "weakly electric fish",
+    "neuroendocrine",
+    "sexually dimorphic behavior",
+    "eod",
+    "hormones",
+    "neural circuits",
+    "behavioral output",
+    "species diversity",
+    "rhythmic behavior"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Caroline Spencer",
+   "summary": "Studies the neural and behavioral mechanisms of speech production, focusing on atypical speech motor control in disorders.",
+   "summary_zh": "研究言语产生中的神经和行为机制，特别是在障碍中的异常言语运动控制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_PATIENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "speech production",
+    "neural mechanisms",
+    "behavioral mechanisms",
+    "atypical speech",
+    "speech disorders"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brielle Stark",
+   "summary": "Studies spoken discourse in aphasia, using microlinguistic analysis and virtual study methods.",
+   "summary_zh": "研究失语症患者的口语表达，采用微语言分析和虚拟研究方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_PATIENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "spoken discourse",
+    "aphasia",
+    "microlinguistic analysis",
+    "virtual study",
+    "task-specific iconic gesturing"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Zoran Tiganj",
+   "summary": "Develops computational models of cognitive processes, using AI techniques to simulate human cognition.",
+   "summary_zh": "开发认知过程的计算模型，使用人工智能技术模拟人类认知。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "ai",
+    "computational models",
+    "human cognition"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "W. Dan Tracey",
+   "summary": "Studies the specification and function of neuronal circuits in fruitflies, using genetic tools and optogenetics to understand pain signaling and mechanotransduction.",
+   "summary_zh": "研究果蝇神经回路的指定和功能，使用遗传工具和光遗传学来理解疼痛信号传导和机械转换。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SYSTEMS_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_CIRCUIT_TOOLS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": []
+   },
+   "keywords": [
+    "neuronal circuits",
+    "fruitflies",
+    "genetic tools",
+    "optogenetics",
+    "pain signaling",
+    "mechanotransduction"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Justin Wood",
+   "summary": "Studies technologies shaping the digital age, including AI, cybersecurity, and health informatics.",
+   "summary_zh": "研究塑造数字时代的科技，包括人工智能、网络安全和健康信息技术。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_ML",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "ai",
+    "cybersecurity",
+    "health informatics",
+    "digital age",
+    "technologies"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  }
+ ]
+}

@@ -1,0 +1,1278 @@
+{
+ "slug": "saint-louis-university",
+ "labeled_at": "2026-10-30",
+ "faculty": [
+  {
+   "name": "Tony W. Buchanan",
+   "summary": "Studies how stress impacts cognition and decision-making, particularly in relation to addiction and gambling disorders.",
+   "summary_zh": "研究压力如何影响认知和决策，特别是在成瘾和赌博障碍方面的生理和行为影响。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "stress",
+    "cognition",
+    "decision making",
+    "addiction",
+    "gambling disorder",
+    "impulsivity",
+    "prosocial behavior",
+    "cortisol",
+    "psychophysiology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Eddie M. Clark",
+   "summary": "Studies health attitudes and close relationships, examining factors like social support and religious beliefs in African American populations.",
+   "summary_zh": "研究健康态度和亲密关系，探讨社会支持和宗教信仰等因素对非洲裔美国人健康的影响。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_RELATIONSHIPS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_EDUCATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "health attitudes",
+    "close relationships",
+    "social support",
+    "religious beliefs",
+    "african american"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Richard D. Harvey",
+   "summary": "Studies the impact of collective identity on social group phenomena such as prejudice and organizational engagement.",
+   "summary_zh": "研究集体身份对偏见和社会群体现象（如参与度）的影响。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_SURVEY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_WORK",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "collective identity",
+    "prejudice",
+    "stigma",
+    "colorism",
+    "organizational engagement",
+    "diversity",
+    "oppression"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Genevieve Keyser",
+   "summary": "Studies cognitive and social processes in online learning environments, focusing on discourse and collaboration among underrepresented populations.",
+   "summary_zh": "研究在线学习环境中认知和社会过程，特别是关注代表性不足群体之间的交流与合作。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_MINORITIZED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "online learning",
+    "discourse",
+    "collaboration",
+    "underrepresented populations",
+    "cognitive processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Brenda A. Kirchhoff",
+   "summary": "Studies memory formation, self-initiated learning strategies, and cognitive rehabilitation using neuroimaging and cognitive assessments.",
+   "summary_zh": "研究记忆形成、自主学习策略和认知康复，使用神经成像和认知评估方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_FMRI",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_NEUROPSYCH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "memory formation",
+    "self-initiated learning",
+    "cognitive rehabilitation",
+    "neuroimaging",
+    "cognitive assessments"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Janet E. Kuebli",
+   "summary": "Studies socialization processes in the family, including emotion understanding, behavior, and parenting.",
+   "summary_zh": "研究家庭中的社会化过程，包括情绪理解、行为和社会化育儿。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "emotion understanding",
+    "parenting",
+    "socialization",
+    "child development",
+    "executive function",
+    "self-regulation"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Donna J. LaVoie",
+   "summary": "Studies how handedness affects cognitive processes, focusing on priming mechanisms.",
+   "summary_zh": "研究手部偏好如何影响认知过程，重点关注启动机制。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "handedness",
+    "priming",
+    "cognition",
+    "identification",
+    "production"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Katherine Luking",
+   "summary": "Studies the neurodevelopmental origins of depression and borderline personality disorder in middle childhood and early adolescence using EEG, fMRI, and behavioral methods.",
+   "summary_zh": "研究中童年期和早期青春期抑郁症和边缘型人格障碍的神经发展起源，使用EEG、fMRI和行为方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_EEG_MEG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_FMRI",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADOLESCENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "neurodevelopment",
+    "psychopathology",
+    "middle childhood",
+    "early adolescence",
+    "depression",
+    "borderline personality disorder",
+    "eeg",
+    "fmri",
+    "emotion regulation",
+    "reward processing"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kimberly K. Powlishta",
+   "summary": "Studies how children learn words from social cues, using eye-tracking and looking-time experiments with infants.",
+   "summary_zh": "研究儿童如何从社会线索中学习单词，使用婴儿的眼动追踪和注视时间实验。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EYE_TRACKING",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "children",
+    "word learning",
+    "social cues",
+    "eye-tracking",
+    "looking-time",
+    "infants"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Bryan W. Sokol",
+   "summary": "Studies how young people develop empathy, agency, and meaning-making, focusing on social cognition and cross-cultural differences.",
+   "summary_zh": "研究年轻人如何发展同理心、自主性和意义建构，重点关注社会认知和跨文化差异。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERSONALITY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADOLESCENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CROSS_CULTURAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "empathy",
+    "agency",
+    "meaning-making",
+    "social cognition",
+    "cross-cultural differences",
+    "positive psychology",
+    "character",
+    "developmental psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Jill D. Waring",
+   "summary": "Studies the interactions of cognition and emotion processing across the lifespan, identifying markers for cognitive decline and mental health symptoms in older adults.",
+   "summary_zh": "研究认知和情绪处理在生命周期中的相互作用，识别老年人认知衰退和心理健康症状的生物标志物。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_OLDER_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognition",
+    "emotion processing",
+    "aging",
+    "neuroscience",
+    "cognitive decline",
+    "anxiety",
+    "depression"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Ruth H. Warner",
+   "summary": "Studies intergroup relations, social justice, and stereotypes, using social psychology experiments.",
+   "summary_zh": "研究群体关系、社会正义和刻板印象，采用社会心理学实验方法。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "intergroup relations",
+    "social justice",
+    "stereotypes",
+    "prejudice",
+    "social psychology",
+    "attitudes",
+    "victimization",
+    "helping behavior",
+    "moral obligations"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Lisa Willoughby",
+   "summary": "Studies memory and attention, and engages psychology majors in research following best practices.",
+   "summary_zh": "研究记忆和注意力，并让心理学专业学生参与遵循最佳实践的研究活动。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MEMORY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ATTENTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "memory",
+    "attention",
+    "research",
+    "best practices",
+    "replication"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Xiaowen Chen",
+   "summary": "Develops and validates assessment instruments for personnel selection and cross-cultural management, applying machine learning methods.",
+   "summary_zh": "开发和验证人员选拔和跨文化管理的评估工具，应用机器学习方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_APPLIED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_SURVEY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_WORK",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_WORKERS_STUDENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "personnel selection",
+    "assessment instrument",
+    "cross-cultural management",
+    "machine learning",
+    "i/o psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Edward J. Sabin",
+   "summary": "Studies organizational behavior and human resource management in industrial settings.",
+   "summary_zh": "研究组织行为和人力资源管理，特别是在工业环境中的应用。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_APPLIED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_WORK",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_WORKERS_STUDENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "organizational behavior",
+    "human resource management",
+    "industrial settings"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kristin Kiddoo",
+   "summary": "Studies how social interactions influence cognitive development in children, using observational methods.",
+   "summary_zh": "研究社会互动如何影响儿童认知发展，使用观察方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_OBSERVATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "social interactions",
+    "cognitive development",
+    "children",
+    "observational methods"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Christopher Schmank",
+   "summary": "Studies how social aspects of emotion regulation, ostensible observation, and psychosocial stress impact cognitive performance, using psychometric network modeling.",
+   "summary_zh": "研究情绪调节的社会方面、显性观察和心理社会压力如何影响认知表现，使用心理测量网络建模方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_EMOTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_STATS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "emotion regulation",
+    "ostensible observation",
+    "psychosocial stress",
+    "cognitive performance",
+    "psychometric network modeling",
+    "latent variable modeling"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Quan Tran",
+   "summary": "Studies interventions for youth in poverty, focusing on psychosocial and academic development.",
+   "summary_zh": "研究针对贫困青少年的心理社会和学术发展干预措施。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CHILDREN",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "interventions",
+    "youth",
+    "poverty",
+    "psychosocial",
+    "academic"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  }
+ ]
+}

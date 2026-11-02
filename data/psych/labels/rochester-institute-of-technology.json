@@ -1,0 +1,2314 @@
+{
+ "slug": "rochester-institute-of-technology",
+ "labeled_at": "2026-10-30",
+ "faculty": [
+  {
+   "name": "Jesus Aguilar",
+   "summary": "Explores theories of action, agency, and free will, focusing on the nature of intentional behavior and moral responsibility.",
+   "summary_zh": "探讨行动、代理和自由意志的理论，重点关注意向性行为和道德责任的本质。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MOTIVATION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERSONALITY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "action theory",
+    "agency",
+    "free will",
+    "philosophy of mind",
+    "metaphysics",
+    "latin-american philosophy",
+    "philosophical thinking",
+    "causal deviance",
+    "thought experiments"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Catherine Albers-Morris",
+   "summary": "Studies the intersection of text and code in digital literatures and new media, analyzing their social and cultural significance.",
+   "summary_zh": "研究文本与代码在数字文学和新媒体中的交叉，分析其社会和文化意义。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "digital literatures",
+    "text",
+    "code",
+    "new media",
+    "interactive media",
+    "literacies",
+    "media literacies"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Cecilia Alm",
+   "summary": "Studies AI and machine learning for human-AI teaming, multimodal dialogue processing, and affective AI.",
+   "summary_zh": "研究人工智能和机器学习在人机团队中的应用、多模态对话处理以及情感人工智能。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_COMPUTATIONAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "human-ai teaming",
+    "multimodal dialogue",
+    "affective ai",
+    "machine learning",
+    "dialogue modeling",
+    "artificial intelligence",
+    "undergraduate research",
+    "universal ai"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Irshad Altheimer",
+   "summary": "Studies the implementation and evaluation of projects to reduce violence and improve justice administration, partnering with various stakeholders.",
+   "summary_zh": "研究减少暴力和改善司法管理的项目实施与评估，与多个利益相关者合作。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_SURVEY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_LAW_JUSTICE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_PATIENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "justice administration",
+    "violence reduction",
+    "partnerships",
+    "criminal justice",
+    "evaluation"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Matt Altobelli",
+   "summary": "Studies cognitive processes such as perception, learning, memory, and problem-solving, using theories and research methods.",
+   "summary_zh": "研究认知过程，如知觉、学习、记忆和问题解决，采用理论和研究方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MEMORY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_ACTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive processes",
+    "perception",
+    "learning",
+    "memory",
+    "problem-solving",
+    "research methods",
+    "psychology",
+    "cognitive psychology"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Omar Aponte",
+   "summary": "Teaches an honors seminar on how social worlds are linked to natural and built environments, fostering student engagement through experiential learning.",
+   "summary_zh": "教授荣誉课程，探讨社会世界与自然和人造环境之间的联系，通过体验式学习促进学生参与。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "honors seminar",
+    "place",
+    "space",
+    "student engagement",
+    "experiential learning"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Natalya Arapov Makarenko",
+   "summary": "Teaches Russian language and culture, focusing on speaking, listening, reading, and writing skills.",
+   "summary_zh": "教授俄语语言和文化，重点培养听说读写技能。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "russian",
+    "language",
+    "cultural",
+    "communication",
+    "grammar",
+    "placement test"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Sara Armengot",
+   "summary": "Expands foreign language education with a focus on STEAM, developing new materials and curricula for Chinese, Italian, and Spanish courses.",
+   "summary_zh": "扩展外语教育，侧重STEAM，开发汉语、意大利语和西班牙语的新材料和课程。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_APPLIED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "foreign language education",
+    "steam",
+    "curricula",
+    "development",
+    "materials"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Erin Auble",
+   "summary": "Studies theatrical production and performance, focusing on scenic painting and props.",
+   "summary_zh": "研究舞台生产和表演，专注于舞台布景和道具。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_WORKERS_STUDENTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "theatrical production",
+    "scenic painting",
+    "props",
+    "performance",
+    "theatre arts"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Bill Ball",
+   "summary": "Teaches about the impact of science and technology on society, exploring their relationship with human values and power.",
+   "summary_zh": "教授科学技术对社会的影响，探讨科学技术与人类价值观及权力之间的关系。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "science",
+    "technology",
+    "society",
+    "values",
+    "power"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Matthew Ballou",
+   "summary": "Teaches film and visual culture, focusing on film analysis, media production, and gender in contemporary art.",
+   "summary_zh": "教授电影和视觉文化，侧重于电影分析、媒体制作以及当代艺术中的性别问题。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "film",
+    "visual culture",
+    "media production",
+    "gender",
+    "contemporary art"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Kerfala Bangoura",
+   "summary": "Teaches West African percussion and dance, focusing on ensemble techniques and cultural contexts.",
+   "summary_zh": "教授西非打击乐和舞蹈，侧重于合奏技巧和文化背景。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_ACTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "percussion",
+    "dance",
+    "ensemble",
+    "west africa",
+    "cultural context"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Aaron Banks",
+   "summary": "Teaches advanced creative writing focusing on genre exploration and skill development.",
+   "summary_zh": "教授高级创意写作，侧重于体裁探索和技能培养。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "creative writing",
+    "genre",
+    "writing techniques",
+    "critiques",
+    "assignments"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Benjamin Banta",
+   "summary": "Studies international ethics, relations, and just war theory, analyzing the ethical implications of emerging technologies in warfare.",
+   "summary_zh": "研究国际伦理、关系和正义战争理论，分析新兴技术在战争中的伦理影响。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_CONCEPTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_MACHINES",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "international ethics",
+    "just war theory",
+    "emerging technologies",
+    "warfare",
+    "cyberpolitics"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Joseph Baschnagel",
+   "summary": "Studies the attentional and emotional aspects of addiction, using psychophysiological methods like eye-tracking and physiological measures.",
+   "summary_zh": "研究成瘾行为的认知和情绪方面，使用眼动追踪和生理测量方法如眨眼反射、面部肌电图、心率和皮肤电导反应。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MOTIVATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EYE_TRACKING",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "addictive behavior",
+    "attention",
+    "emotional processing",
+    "eye-tracking",
+    "smokers",
+    "non-smokers",
+    "cues",
+    "mobile eye-tracking",
+    "psychophysiological",
+    "borderline personality disorder"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Amit Batabyal",
+   "summary": "Studies economic policies for river water pollution and mask wearing in different environments.",
+   "summary_zh": "研究河流水污染和不同环境下的口罩佩戴的经济政策。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_ENVIRONMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "economic policies",
+    "river water pollution",
+    "mask wearing",
+    "bertrand duopoly",
+    "climate change"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Christian Bean",
+   "summary": "Studies the onset of depression and anxiety during life transitions using smartphones and biosensors.",
+   "summary_zh": "研究生活转变（如青春期、大学入学、怀孕和新父母身份）期间抑郁和焦虑的发作，使用智能手机和生物传感器探索心理适应。",
+   "confidence": "high",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_DAILY_LIFE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_PHYSIOLOGY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "depression",
+    "anxiety",
+    "life transitions",
+    "smartphones",
+    "biosensors",
+    "psychological adjustment"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Makini Beck",
+   "summary": "Studies mentoring women of color in academia and narrative inquiry, focusing on immigrant women teachers and dialogic leadership for social justice.",
+   "summary_zh": "研究有色人种女性在学术界的导师制度和叙事探究，重点关注移民女性教师和对话式领导力的社会正义。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_OBSERVATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_INFANTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "women of color",
+    "mentoring",
+    "narrative inquiry",
+    "immigrant women teachers",
+    "dialogic leadership"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Silvia Benso",
+   "summary": "Explores ancient and contemporary European philosophy, with a focus on ethics and feminist theories.",
+   "summary_zh": "研究古希腊和当代欧洲哲学，特别是伦理学和女性主义理论。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "philosophy",
+    "ancient philosophy",
+    "feminist theories",
+    "ethics",
+    "history of philosophy"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Bharat Bhole",
+   "summary": "Studies economic behavior and decision-making using game theory and data analysis.",
+   "summary_zh": "研究经济行为和决策，使用博弈论和数据分析方法。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DECISION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_COMP_MODEL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_ECONOMICS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "game theory",
+    "economic behavior",
+    "data analysis",
+    "microeconomics",
+    "market structures"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Deborah Blizzard",
+   "summary": "Explores the sociocultural construction of fetoscopy, bereavement in twin gestations, and the cultural analysis of contemporary close-up magic.",
+   "summary_zh": "探索胎儿手术的社会文化建构、单胎妊娠中的丧亲之痛以及当代近距离魔术的文化分析。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_FAMILIES_COUPLES",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "fetoscopy",
+    "bereavement",
+    "twin gestations",
+    "close-up magic",
+    "sociocultural construction"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Johannes Bockwoldt",
+   "summary": "Teaches film analysis and interpretation to students, focusing on aesthetics, structure, history, and technical components of films.",
+   "summary_zh": "教授电影分析和解读，关注电影的美学、结构、历史和技术成分。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "film",
+    "analysis",
+    "interpretation",
+    "aesthetics",
+    "structure",
+    "history",
+    "technical components"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Christian Bolden",
+   "summary": "Studies reentry of long-term incarcerated individuals and street gangs, using interviews and expert testimony.",
+   "summary_zh": "研究长期监禁人员的重返社会和街头帮派，使用访谈和专家证词。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_SURVEY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_PATIENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "reentry",
+    "street gangs",
+    "long-term incarceration",
+    "life sentences",
+    "interviews",
+    "expert testimony"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Leisa Boling",
+   "summary": "Teaches American Sign Language and interprets deaf culture, focusing on language skills and cultural protocols.",
+   "summary_zh": "教授美国手语和聋人文化，侧重于语言技能和文化规范。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "american sign language",
+    "interpreting education",
+    "deaf culture",
+    "asl",
+    "cultural protocols"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Rain Bosworth",
+   "summary": "Studies how deafness and sign language experience impact perceptual abilities in infants and children, using visual and tactile exploratory behaviors.",
+   "summary_zh": "研究聋哑和手语经验如何影响婴儿和儿童的感知能力，使用视觉和触觉探索行为。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_LANGUAGE",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_INFANTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_CHILDREN",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "perception",
+    "language",
+    "infants",
+    "children",
+    "sign language",
+    "visual",
+    "tactile",
+    "exploratory behaviors"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Evelyn Brister",
+   "summary": "Explores the role of values in land management and ecological restoration, particularly the use of biotechnology for conservation.",
+   "summary_zh": "研究价值观在土地管理和生态恢复中的作用，特别是生物技术在保护中的应用。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "values",
+    "ecological restoration",
+    "land management",
+    "biotechnology",
+    "conservation"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Michael Brown",
+   "summary": "Studies the role of intellectuals in American politics and public culture, examining debates about expertise and democracy.",
+   "summary_zh": "研究知识分子在美国政治和公共文化中的作用，探讨关于专业知识和民主的辩论。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "intellectuals",
+    "democracy",
+    "public history",
+    "american politics",
+    "expertise"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Claudia Bucciferro",
+   "summary": "Studies media and culture, focusing on global film, music, gender, and Latinx popular culture, examining issues of identity and representation.",
+   "summary_zh": "研究媒体与文化，关注全球电影、音乐、性别和拉丁裔流行文化，探讨身份和表现的问题。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "global film",
+    "media",
+    "culture",
+    "gender",
+    "latinx popular culture",
+    "identity",
+    "representation"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Jeffrey Burnette",
+   "summary": "Studies the relationship between education, inequality, and the quantification of American Indian and Alaska Native identity.",
+   "summary_zh": "研究教育、不平等与美国印第安人和阿拉斯加原住民身份量化的关系。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_MENTAL_HEALTH",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_SURVEY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_MENTAL_HEALTH",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "education",
+    "inequality",
+    "identity",
+    "american indian",
+    "alaska native",
+    "federal datasets",
+    "data disaggregation"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Sarah Burns",
+   "summary": "Studies political power dynamics and war powers in democracies, analyzing historical trends and current legislative practices.",
+   "summary_zh": "研究民主国家中的政治权力动态和战争权力，分析历史趋势和当前立法实践。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_RELATIONSHIPS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_POLITICS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "war powers",
+    "legislature",
+    "executive leaders",
+    "congress",
+    "military action"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Mattia Caldarulo",
+   "summary": "Studies the non-technical dimensions of cybersecurity policy, focusing on laws, economic incentives, and social factors.",
+   "summary_zh": "研究网络安全政策的非技术维度，重点关注法律法规、经济激励和社会因素。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_SAFETY_TRANSPORT",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cybersecurity",
+    "policy",
+    "laws",
+    "economic incentives",
+    "social factors",
+    "public policy",
+    "time poverty"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "John Capps",
+   "summary": "Explores theories of truth and the philosophy of science, influenced by American pragmatists like Dewey.",
+   "summary_zh": "研究真理理论和科学哲学，受美国实用主义大师如杜威的影响。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_OTHER_ANIMALS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "truth",
+    "epistemology",
+    "pragmatism",
+    "american pragmatists",
+    "dewey"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Tamar Carroll",
+   "summary": "Studies the history of social movements and activism, particularly in the post-1945 period, using oral history and archival research.",
+   "summary_zh": "研究美国社会运动和activism的历史，特别是在1945年后的时期，使用口述史和档案研究的方法。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_OBSERVATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "oral history",
+    "activism",
+    "social movements",
+    "women’s history",
+    "public history",
+    "digital history"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Conerly Casey",
+   "summary": "Studies cultural practices and their persistence through rituals and sensory politics in Nigeria and Bhutan.",
+   "summary_zh": "研究文化实践及其通过仪式和感官政治在尼日利亚和不丹的持续性。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_SURVEY",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_SAFETY_TRANSPORT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cultural practices",
+    "rituals",
+    "sensory politics",
+    "nigeria",
+    "bhutan"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Elizabeth Chatterton",
+   "summary": "Teaches copywriting and media planning for advertising campaigns.",
+   "summary_zh": "教授广告文案和媒体规划，以创建有效的广告活动。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_APPLIED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "advertising",
+    "copywriting",
+    "media planning",
+    "undergraduates",
+    "campaigns"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Philippe Chavasse",
+   "summary": "Studies literature and cultural phenomena, focusing on 19th-century French literature and queer theory.",
+   "summary_zh": "研究文学和文化现象，重点关注19世纪法国文学和性少数理论。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "19世纪法国文学",
+    "性少数理论",
+    "文学",
+    "文化现象",
+    "queer",
+    "novels"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Zhong Chen",
+   "summary": "Develops new materials and curricula for foreign language courses focusing on STEAM, involving Chinese, Italian, and Spanish.",
+   "summary_zh": "开发面向STEAM的外语课程材料和课程，涵盖中文、意大利语和西班牙语。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "foreign language",
+    "steam",
+    "curricula",
+    "materials",
+    "chinese",
+    "italian",
+    "spanish"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "David Chisholm",
+   "summary": "Studies comics as sensory experiences, exploring multi-sensory elements in visual storytelling.",
+   "summary_zh": "研究漫画作为感官体验，探索多感官元素在视觉叙事中的应用。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_PERCEPTION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_TECHNOLOGY",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "comics",
+    "sensory experience",
+    "graphic novel",
+    "visual storytelling",
+    "sequential illustration"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Nathan Claes",
+   "summary": "Studies evaluation and research design methods for public policy, focusing on program assessment and communication of complex information.",
+   "summary_zh": "研究公共政策评估和研究设计方法，重点关注复杂信息的沟通。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_APPLIED",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_HEALTH_MEDICINE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "D_WORK",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "evaluation",
+    "research design",
+    "program assessment",
+    "complex information",
+    "communication"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  },
+  {
+   "name": "Kassidy Colton",
+   "summary": "Studies human development from conception to adulthood, focusing on cognitive, social, and emotional changes.",
+   "summary_zh": "研究从胎儿期到成年期的人类发展，重点在于认知、社会和情绪变化。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_COG_NEURO",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "human development",
+    "cognitive development",
+    "social development",
+    "emotional development",
+    "adolescence",
+    "infant brain plasticity",
+    "memory changes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Kirsten Condry",
+   "summary": "Studies learning, perception, and cognitive development in children and adults, and develops teaching techniques to improve writing and critical thinking.",
+   "summary_zh": "研究儿童和成人学习、知觉和认知发展，并开发教学技术以提高写作和批判性思维能力。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "learning",
+    "cognitive development",
+    "teaching techniques",
+    "writing",
+    "critical thinking",
+    "children",
+    "adults"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Frances Cooley",
+   "summary": "Studies how deaf readers use sign language and visual information to read, using eye-tracking experiments to understand reading strategies in this population.",
+   "summary_zh": "研究聋人读者如何使用手语和视觉信息阅读，并通过眼动追踪实验了解该群体的阅读策略。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_LANGUAGE",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "T_PERCEPTION",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [
+     {
+      "code": "A_BEHAVIORAL",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "A_EYE_TRACKING",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "data": [
+     {
+      "code": "D_EDUCATION",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADULTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "reading",
+    "deaf readers",
+    "sign language",
+    "eye-tracking",
+    "bilingualism",
+    "visual information",
+    "vocabulary",
+    "cognitive processes"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Grant Cos",
+   "summary": "Studies the effects of populism on political communication and democracy, focusing on Ukraine.",
+   "summary_zh": "研究民粹主义对政治沟通和民主的影响，重点关注乌克兰。",
+   "confidence": "medium",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_SOCIAL_COG",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [
+     {
+      "code": "D_POLITICS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "populism",
+    "political communication",
+    "democracy",
+    "ukraine",
+    "speechmaking"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  }
+ ]
+}

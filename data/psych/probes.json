@@ -1,0 +1,30 @@
+{
+  "note": "Realistic research descriptions used at build time to calibrate similarity scores. The first five also appear as examples on the Match page.",
+  "probes": [
+    "I want to study how children learn the meanings of new words from conversation and social cues, using looking-time and eye-tracking experiments with toddlers.",
+    "My interest is in how stress during adolescence changes reward learning and risk taking, using fMRI and computational models of reinforcement learning.",
+    "I study how people spread and correct misinformation online, combining large-scale social media data with survey experiments on political polarization.",
+    "I am interested in the neural circuits for fear memory and extinction in rodents, using optogenetics and in vivo calcium imaging.",
+    "I want to research how bilinguals control which language they speak, using reaction-time tasks, EEG and studies of code-switching.",
+    "How does working memory capacity limit visual attention? I use psychophysics and computational models with adult participants.",
+    "I study implicit bias and intergroup contact, and design field interventions to reduce prejudice in schools.",
+    "My research examines sleep and memory consolidation in older adults, using polysomnography and memory tasks.",
+    "I am interested in moral judgment and theory of mind in young children across cultures.",
+    "I want to study vocal learning in songbirds as a model for speech, using neural recordings in zebra finches.",
+    "I use machine learning and large language models to model human semantic memory and word associations.",
+    "I study emotion regulation in daily life using ecological momentary assessment and wearable physiology.",
+    "My research is on decision making under risk and how people value delayed rewards, with behavioral economics methods.",
+    "I want to research reading development and dyslexia in elementary school children, including interventions in classrooms.",
+    "I study face perception and its development in infants with EEG and eye tracking.",
+    "My interest is personality traits and well-being across the lifespan using large longitudinal panel data.",
+    "I study human factors and attention while driving, using driving simulators and eye tracking.",
+    "I want to understand primate visual cortex and object recognition using electrophysiology and deep neural networks.",
+    "I research close relationships, attachment and couples' communication with observational and diary methods.",
+    "I am interested in numerical cognition and how children learn math, with experiments in schools.",
+    "I study the evolution of cooperation and social learning by comparing children and chimpanzees.",
+    "My research uses psychometrics and Bayesian statistics to improve measurement and replicability in psychology.",
+    "I study motor learning and how the cerebellum adapts movements, using reaching tasks and brain stimulation.",
+    "I want to study auditory perception of music and speech rhythm, with behavioral and EEG experiments.",
+    "I examine workplace motivation, leadership and team performance in organizations."
+  ]
+}

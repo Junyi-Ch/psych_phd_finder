@@ -1,0 +1,35 @@
+# build output
+dist/
+.astro/
+node_modules/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# scraped html cache and intermediate files (regenerable)
+data/cache
+pipeline/.cache/
+
+# logs
+*.log
+npm-debug.log*
+
+# env
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+nul
+
+# raw scrapes contain copied profile text and photo URLs: kept locally in ~/data/linguistics_phd, never committed
+data/raw
+data/*/raw
+data/manual/*.html
+
+# Academic Family Tree export (large; downloaded by pipeline/tree.py)
+data/academictree/

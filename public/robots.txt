@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://junyi-ch.github.io/psych_phd_finder/sitemap-index.xml

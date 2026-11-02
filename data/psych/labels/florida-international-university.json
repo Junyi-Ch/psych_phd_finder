@@ -1,0 +1,134 @@
+{
+ "slug": "florida-international-university",
+ "labeled_at": "2026-10-30",
+ "faculty": [
+  {
+   "name": "Academic Affairs",
+   "summary": "Studies various cognitive and developmental processes through interdisciplinary research and teaching.",
+   "summary_zh": "研究认知和发展的各种过程，通过跨学科的研究和教学进行探索。",
+   "confidence": "low",
+   "labels": {
+    "topic": [
+     {
+      "code": "T_DEVELOPMENT",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_CHILDREN",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "S_ADOLESCENTS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "cognitive",
+    "developmental",
+    "processes",
+    "interdisciplinary",
+    "research",
+    "teaching"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "CASE Awards",
+   "summary": "Teaches and conducts research, driving intellectual development and knowledge in psychology.",
+   "summary_zh": "从事教学和研究，推动心理学领域的智力发展和知识积累。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [
+     {
+      "code": "S_ADULTS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     },
+     {
+      "code": "R_BIRDS",
+      "primary": false,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "teaching",
+    "research",
+    "intellectual development",
+    "knowledge",
+    "academy"
+   ],
+   "psych_relevant": true,
+   "clinical_role": false
+  },
+  {
+   "name": "Foreign Credential Evaluations Guidelines",
+   "summary": "Develops guidelines for evaluating foreign academic credentials, ensuring equitable assessment.",
+   "summary_zh": "制定外国学术资质评估指南，确保评估公平。",
+   "confidence": "low",
+   "labels": {
+    "topic": [],
+    "approach": [],
+    "data": [],
+    "setting": [],
+    "region": [
+     {
+      "code": "R_HUMANS",
+      "primary": true,
+      "sources": [
+       "department_profile"
+      ]
+     }
+    ]
+   },
+   "keywords": [
+    "guidelines",
+    "foreign credentials",
+    "evaluation",
+    "equity"
+   ],
+   "psych_relevant": false,
+   "clinical_role": false
+  }
+ ]
+}

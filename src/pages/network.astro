@@ -1,0 +1,499 @@
+---
+import Base from '../layouts/Base.astro';
+import programs from '../data/programs.json';
+import { GROUPS, type Program } from '../lib/data';
+import { SITE } from '../lib/discipline';
+import { existsSync } from 'node:fs';
+// co-author and family data are optional (the psychology site has neither yet)
+const hasCo = existsSync('src/data/coauthors.json'), hasTree = existsSync('src/data/tree.json');
+const progs = (programs as Program[]).map((p) => ({ slug: p.slug, name: p.name })).sort((a, b) => a.name.localeCompare(b.name));
+---
+<Base title="Faculty network" description={SITE.networkDescription}>
+  <section class="net-head">
+    <h1 data-i18n="net_h1">Faculty network</h1>
+    <p class="lede" data-i18n="net_lede2">See how faculty across the 60 universities are connected. Choose a kind of connection, then click anyone on the map.</p>
+  </section>
+
+  <div class="net-modes" id="net-mode" role="tablist" aria-label="Connections" hidden={!hasCo && !hasTree}>
+    <button type="button" role="tab" data-m="sim" aria-selected="true">
+      <span class="nm-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.3 11l7.4-3.8M8.3 13l7.4 3.8"/></svg></span>
+      <span class="nm-t" data-i18n="net_mode_sim">Similar research</span>
+      <span class="nm-d" data-i18n="net_mode_sim_d">People whose research is most alike</span>
+    </button>
+    <button type="button" role="tab" data-m="co" aria-selected="false" hidden={!hasCo}>
+      <span class="nm-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span>
+      <span class="nm-t" data-i18n="net_mode_co">Co-authors</span>
+      <span class="nm-d" id="co-desc" data-i18n="net_mode_co_d">Who has published papers together</span>
+    </button>
+    <button type="button" role="tab" data-m="adv" aria-selected="false" hidden={!hasTree}>
+      <span class="nm-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5l-5 5M12 11.5l5 5"/></svg></span>
+      <span class="nm-t" data-i18n="net_mode_adv">Academic tree</span>
+      <span class="nm-d" data-i18n="net_mode_adv_d">Advisors, students and shared advisors</span>
+    </button>
+  </div>
+  <p class="net-explain small" id="net-explain"></p>
+
+  <div class="net-tools">
+    <div class="net-find">
+      <input class="input" id="net-q" type="search" list="net-names" autocomplete="off" placeholder="Find a person" data-i18n="net_find" data-i18n-attr="placeholder" aria-label="Find a person" />
+      <datalist id="net-names"></datalist>
+    </div>
+    <select class="input" id="net-u" aria-label="Works at">
+      <option value="" data-i18n="net_all_unis2">Works at: any university</option>
+      {progs.map((p) => <option value={p.slug}>{p.name}</option>)}
+    </select>
+    <span class="small muted" id="net-count"></span>
+  </div>
+  <div class="net-legend" id="net-legend" role="group" aria-label="Main subfield">
+    <span class="small muted" data-i18n="net_color2">Dot colour = main subfield (click to hide or show):</span>
+    {GROUPS.map((g, i) => (
+      <button type="button" class="lg" data-g={i} aria-pressed="true"><i style={`background:var(--g${i})`}></i><span data-lang-only="en">{g.en}</span><span data-lang-only="zh">{g.zh}</span></button>
+    ))}
+  </div>
+
+  <div class="net-wrap">
+    <div class="net-stage" id="stage">
+      <canvas id="cv" aria-label="Map of faculty by research similarity" role="img"></canvas>
+      <div class="net-tip" id="tip" hidden></div>
+      <div class="net-zoom">
+        <button type="button" id="zin" aria-label="Zoom in">+</button>
+        <button type="button" id="zout" aria-label="Zoom out">−</button>
+        <button type="button" id="zfit" aria-label="Show everyone" data-i18n="net_fit" data-i18n-attr="aria-label">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+      </div>
+      <p class="net-status small muted" id="net-status" data-i18n="net_loading">Loading the map…</p>
+    </div>
+    <aside class="panel net-panel" id="panel" aria-live="polite">
+      <div id="panel-empty"></div>
+      <div id="panel-person" hidden></div>
+    </aside>
+  </div>
+</Base>
+
+<style is:global>
+  :root {
+    --g0: #2a78d6; --g1: #eb6834; --g2: #1baf7a; --g3: #eda100; --g4: #e87ba4; --g5: #008300; --g6: #6250d6; --g7: #e34948; --g8: #a3a39b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --g0: #3987e5; --g1: #d95926; --g2: #199e70; --g3: #c98500; --g4: #d55181; --g5: #008300; --g6: #9085e9; --g7: #e66767; --g8: #6b6b65; }
+  }
+  :root[data-theme="dark"] { --g0: #3987e5; --g1: #d95926; --g2: #199e70; --g3: #c98500; --g4: #d55181; --g5: #008300; --g6: #9085e9; --g7: #e66767; --g8: #6b6b65; }
+
+  .net-head { display: grid; gap: 10px; justify-items: start; padding: 12px 0 20px; }
+  .net-modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .net-modes button { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 12px; row-gap: 2px; align-items: center; text-align: left; padding: 14px 16px; border: 1px solid var(--line); background: var(--bg-2); border-radius: var(--radius-lg); color: var(--ink); cursor: pointer; font: inherit; }
+  .net-modes button:hover { border-color: var(--line-2); }
+  .net-modes button[aria-selected="true"] { border-color: var(--action); box-shadow: inset 0 0 0 1px var(--action); background: var(--action-soft); }
+  .net-modes button[disabled] { opacity: 0.55; cursor: not-allowed; }
+  .net-modes .nm-ic { grid-row: 1 / 3; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--bg-3); color: var(--ink-2); }
+  .net-modes button[aria-selected="true"] .nm-ic { background: var(--action); color: #fff; }
+  .net-modes .nm-t { font-weight: 600; }
+  .net-modes .nm-d { font-size: 0.8125rem; color: var(--ink-3); }
+  .net-explain { margin: 12px 0 14px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+  .net-explain .key { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-3); }
+  .net-explain svg { flex: none; }
+  .pairs { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 2px; }
+  .pairs button { width: 100%; text-align: left; padding: 8px; border: 0; background: transparent; border-radius: 10px; color: var(--ink); cursor: pointer; font: inherit; font-size: 0.9rem; display: grid; gap: 2px; }
+  .pairs button:hover, .pairs button:focus-visible { background: var(--bg-3); }
+  .pairs .sub { font-size: 0.8125rem; color: var(--ink-3); }
+  .pairs .arrow { color: var(--ink-3); margin: 0 4px; }
+  @media (max-width: 700px) { .net-modes { grid-template-columns: 1fr; } .net-modes .nm-d { display: none; } .net-modes button { padding: 10px 12px; } }
+  .net-head .lede { max-width: 62ch; }
+  .net-tools { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; }
+  .net-find { flex: 1 1 260px; max-width: 380px; }
+  .net-find .input { width: 100%; }
+  #net-mode { flex: none; }
+  #net-phd { flex: 0 1 260px; min-width: 0; }
+  .nb-off { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 4px 10px; align-items: baseline; padding: 8px; }
+  .nb-off i { width: 9px; height: 9px; border-radius: 999px; border: 1.5px solid var(--ink-3); }
+  .nb-off .nm { font-weight: 600; font-size: 0.92rem; color: var(--ink-2); }
+  .nb-off .sub { grid-column: 2; font-size: 0.8125rem; color: var(--ink-3); }
+  #net-u { flex: 0 1 300px; min-width: 0; }
+  .net-legend { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 12px 0 14px; }
+  .net-legend > .small { margin-right: 4px; }
+  .net-legend .lg { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); background: var(--bg-2); color: var(--ink-2); border-radius: 999px; padding: 5px 11px 5px 9px; font-size: 0.8125rem; min-height: 32px; cursor: pointer; }
+  .net-legend .lg i { width: 10px; height: 10px; border-radius: 999px; flex: none; }
+  .net-legend .lg[aria-pressed="false"] { color: var(--ink-3); background: transparent; border-style: dashed; }
+  .net-legend .lg[aria-pressed="false"] i { opacity: 0.25; }
+  .net-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+  .net-stage { position: relative; height: min(72vh, 760px); min-height: 420px; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; }
+  .net-stage canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+  .net-stage canvas.dragging { cursor: grabbing; }
+  .net-stage canvas.pointing { cursor: pointer; }
+  .net-tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg-2); font-size: 0.8125rem; padding: 6px 9px; border-radius: 8px; max-width: 260px; line-height: 1.35; transform: translate(12px, -50%); }
+  .net-tip b { font-weight: 600; }
+  .net-zoom { position: absolute; right: 12px; bottom: 12px; display: grid; gap: 4px; }
+  .net-zoom button { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--bg-2); color: var(--ink-2); border-radius: 10px; font-size: 1.1rem; cursor: pointer; }
+  .net-zoom button:hover { border-color: var(--line-2); color: var(--ink); }
+  .net-status { position: absolute; left: 14px; top: 12px; margin: 0; }
+  .net-panel { position: sticky; top: 84px; max-height: calc(100vh - 100px); overflow: auto; }
+  .net-howto { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 8px; color: var(--ink-2); font-size: 0.92rem; }
+  .np-meta { font-size: 0.8125rem; color: var(--ink-3); }
+  .np-name { font-size: 1.25rem; margin-top: 4px; }
+  .np-name a { color: var(--ink); text-decoration: none; }
+  .np-name a:hover { color: var(--action-text); }
+  .np-sum { margin-top: 10px; color: var(--ink-2); font-size: 0.92rem; }
+  .np-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .np-sub { margin-top: 20px; }
+  .nb { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 2px; }
+  .nb button { width: 100%; text-align: left; display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 4px 10px; align-items: baseline; padding: 8px 8px; border: 0; background: transparent; border-radius: 10px; color: var(--ink); cursor: pointer; font: inherit; }
+  .nb button:hover, .nb button:focus-visible { background: var(--bg-3); }
+  .nb i { width: 9px; height: 9px; border-radius: 999px; transform: translateY(-1px); }
+  .nb .nm { font-weight: 600; font-size: 0.92rem; }
+  .nb .sub { grid-column: 2; font-size: 0.8125rem; color: var(--ink-3); }
+  @media (max-width: 900px) {
+    .net-wrap { grid-template-columns: 1fr; }
+    .net-panel { position: static; max-height: none; }
+    .net-stage { height: 64vh; min-height: 360px; }
+  }
+</style>
+
+<script>
+  import { getLang, t } from '../lib/i18n';
+  import { bindSaveButtons, saveMark } from '../lib/ui';
+  import { has } from '../lib/shortlist';
+  import { esc, GROUPS } from '../lib/data';
+  import tax from '../data/taxonomy.json';
+
+  type Node = { id: string; n: string; u: string; us: string; r: string; fld: string; g: number; x: number; y: number; s: string; sz: string; k: [number, string[]][]; c: [number, number, number][]; ph: [string, number | null] | null; av: (number | string)[]; st: (number | string)[]; sb: [number, string][] };
+  const base = (import.meta.env.BASE_URL as string).replace(/\/+$/, '') + '/';
+  const TOP = (tax as any).dimensions.topic;
+  const topicName = (c: string) => (getLang() === 'zh' ? TOP.labels_short_zh?.[c] : TOP.labels_short?.[c]) || c;
+
+  const stage = document.getElementById('stage')!;
+  const cv = document.getElementById('cv') as HTMLCanvasElement;
+  const ctx = cv.getContext('2d')!;
+  const tip = document.getElementById('tip')!;
+  const status = document.getElementById('net-status')!;
+  const qIn = document.getElementById('net-q') as HTMLInputElement;
+  const uSel = document.getElementById('net-u') as HTMLSelectElement;
+  const countEl = document.getElementById('net-count')!;
+  const pEmpty = document.getElementById('panel-empty')!;
+  const pPerson = document.getElementById('panel-person')!;
+
+  let N: Node[] = [], E: [number, number][] = [], CO: [number, number, number][] = [];
+  type Mode = 'sim' | 'co' | 'adv';
+  let mode: Mode = 'sim';
+  let ADV: [number, number][] = [];  // [advisor, student], both on the site
+  const inAdv = new Set<number>();
+  let W = 0, H = 0, dpr = 1, scale = 1, tx = 0, ty = 0;
+  let sel = -1, hover = -1, uni = '', phdSel = '';
+  const groupOn = new Set<number>([-1, ...GROUPS.map((_, i) => i)]);
+  let col: string[] = [], C = { line: '', ink: '', ink3: '', bg: '' };
+
+  const cssv = (n: string) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  function readColors() {
+    col = Array.from({ length: 9 }, (_, i) => cssv('--g' + i));
+    C = { line: cssv('--line-2'), ink: cssv('--ink'), ink3: cssv('--ink-3'), bg: cssv('--bg-2') };
+  }
+  const colorOf = (g: number) => col[g < 0 ? 8 : g];
+  const active = (i: number) => groupOn.has(N[i].g) && (!uni || N[i].u === uni) && (!phdSel || N[i].ph?.[0] === phdSel);
+  const famOf = (i: number) => [...N[i].av, ...N[i].st, ...N[i].sb.map((x) => x[0])].filter((x): x is number => typeof x === 'number');
+  const neigh = () => (sel < 0 ? new Set<number>() : new Set(mode === 'adv' ? famOf(sel) : (mode === 'co' ? N[sel].c : N[sel].k).map((k) => k[0])));
+
+  function resize() {
+    const r = stage.getBoundingClientRect();
+    W = r.width; H = r.height; dpr = window.devicePixelRatio || 1;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    draw();
+  }
+
+  function fit(only?: number[], animate = false) {
+    const idx = only && only.length ? only : N.map((_, i) => i);
+    if (!idx.length) return;
+    let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+    for (const i of idx) { const p = N[i]; x0 = Math.min(x0, p.x); x1 = Math.max(x1, p.x); y0 = Math.min(y0, p.y); y1 = Math.max(y1, p.y); }
+    const pad = 40;
+    const s = Math.min(6, Math.min((W - pad * 2) / Math.max(x1 - x0, 1), (H - pad * 2) / Math.max(y1 - y0, 1)));
+    go(s, W / 2 - ((x0 + x1) / 2) * s, H / 2 - ((y0 + y1) / 2) * s, animate);
+  }
+
+  let anim = 0;
+  function go(s: number, x: number, y: number, animate: boolean) {
+    cancelAnimationFrame(anim);
+    if (!animate || matchMedia('(prefers-reduced-motion: reduce)').matches) { scale = s; tx = x; ty = y; draw(); return; }
+    const s0 = scale, x0 = tx, y0 = ty, t0 = performance.now();
+    const step = (now: number) => {
+      const k = Math.min(1, (now - t0) / 380), e = 1 - Math.pow(1 - k, 3);
+      scale = s0 + (s - s0) * e; tx = x0 + (x - x0) * e; ty = y0 + (y - y0) * e; draw();
+      if (k < 1) anim = requestAnimationFrame(step);
+    };
+    anim = requestAnimationFrame(step);
+  }
+  function zoomAt(px: number, py: number, f: number) {
+    const s = Math.max(0.3, Math.min(14, scale * f));
+    tx = px - ((px - tx) * s) / scale; ty = py - ((py - ty) * s) / scale; scale = s; draw();
+  }
+
+  function label(text: string, x: number, y: number, bold = false) {
+    ctx.font = `${bold ? 600 : 500} 12px "Geist Variable", system-ui, sans-serif`;
+    ctx.lineWidth = 3; ctx.strokeStyle = C.bg; ctx.lineJoin = 'round';
+    ctx.strokeText(text, x, y); ctx.fillStyle = C.ink; ctx.fillText(text, x, y);
+  }
+
+  /** dashed line with an arrowhead, from (x1,y1) to (x2,y2), stopping short of the dot */
+  function arrow(x1: number, y1: number, x2: number, y2: number, color: string, w: number) {
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1, ux = dx / L, uy = dy / L;
+    const ex = x2 - ux * 8, ey = y2 - uy * 8;
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w;
+    ctx.setLineDash([5, 4]); ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(ex, ey); ctx.stroke(); ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(ex + ux * 2, ey + uy * 2); ctx.lineTo(ex - ux * 7 - uy * 4, ey - uy * 7 + ux * 4); ctx.lineTo(ex - ux * 7 + uy * 4, ey - uy * 7 - ux * 4); ctx.closePath(); ctx.fill();
+  }
+
+  function draw() {
+    if (!N.length) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    const X = (i: number) => N[i].x * scale + tx, Y = (i: number) => N[i].y * scale + ty;
+    const nb = neigh();
+    // links
+    ctx.lineWidth = 1; ctx.strokeStyle = C.line; ctx.globalAlpha = sel >= 0 ? 0.35 : 0.7;
+    if (mode === 'sim') {
+      ctx.beginPath();
+      for (const [a, b] of E) { if (!active(a) || !active(b)) continue; ctx.moveTo(X(a), Y(a)); ctx.lineTo(X(b), Y(b)); }
+      ctx.stroke();
+    } else if (mode === 'adv') {
+      ctx.globalAlpha = sel >= 0 ? 0.25 : 0.9;
+      for (const [a, b] of ADV) { if (!active(a) || !active(b)) continue; arrow(X(a), Y(a), X(b), Y(b), C.ink3, 1.4); }
+    } else {
+      ctx.strokeStyle = C.ink3; ctx.globalAlpha = sel >= 0 ? 0.12 : 0.32;
+      for (const [a, b, n] of CO) {
+        if (!active(a) || !active(b)) continue;
+        ctx.lineWidth = n >= 10 ? 2.2 : n >= 3 ? 1.4 : 0.8;
+        ctx.beginPath(); ctx.moveTo(X(a), Y(a)); ctx.lineTo(X(b), Y(b)); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+    if (sel >= 0 && mode !== 'adv') {
+      ctx.lineWidth = 1.5; ctx.strokeStyle = C.ink3; ctx.beginPath();
+      for (const j of nb) { ctx.moveTo(X(sel), Y(sel)); ctx.lineTo(X(j), Y(j)); }
+      ctx.stroke();
+    }
+    if (sel >= 0 && mode === 'adv') {
+      for (const j of N[sel].av) if (typeof j === 'number') arrow(X(j), Y(j), X(sel), Y(sel), C.ink, 2);
+      for (const j of N[sel].st) if (typeof j === 'number') arrow(X(sel), Y(sel), X(j), Y(j), C.ink, 2);
+      ctx.strokeStyle = C.ink3; ctx.lineWidth = 1.5; ctx.setLineDash([1.5, 3.5]); ctx.lineCap = 'round'; ctx.beginPath();
+      for (const [j] of N[sel].sb) { ctx.moveTo(X(sel), Y(sel)); ctx.lineTo(X(j), Y(j)); }
+      ctx.stroke(); ctx.setLineDash([]); ctx.lineCap = 'butt';
+    }
+    // dots
+    const r = Math.max(2.4, Math.min(7, 2.6 * Math.sqrt(scale)));
+    for (let i = 0; i < N.length; i++) {
+      const on = active(i), focus = sel < 0 ? (mode !== 'adv' || inAdv.has(i)) : (i === sel || nb.has(i));
+      ctx.globalAlpha = !on ? 0.14 : focus ? 1 : 0.28;
+      ctx.fillStyle = on ? colorOf(N[i].g) : C.ink3;
+      const rr = i === sel ? r + 3 : nb.has(i) ? r + 1.5 : r;
+      ctx.beginPath(); ctx.arc(X(i), Y(i), rr, 0, Math.PI * 2); ctx.fill();
+      if (on && (i === sel || nb.has(i) || i === hover)) { ctx.globalAlpha = 1; ctx.lineWidth = 2; ctx.strokeStyle = i === sel || i === hover ? C.ink : C.bg; ctx.stroke(); }
+    }
+    ctx.globalAlpha = 1;
+    // names: the selected person and their neighbours; a highlighted university; everyone on screen when zoomed in far
+    const named = new Set<number>();
+    if (sel >= 0) { named.add(sel); nb.forEach((j) => named.add(j)); [...N[sel].av, ...N[sel].st].forEach((x) => { if (typeof x === 'number') named.add(x); }); }
+    if (uni || phdSel) N.forEach((p, i) => { if (active(i)) named.add(i); });
+    if (sel < 0 && mode === 'adv') inAdv.forEach((i) => { if (active(i)) named.add(i); });
+    if (sel < 0 && scale > 3.2) N.forEach((_, i) => { if (active(i) && X(i) > -20 && X(i) < W + 20 && Y(i) > -20 && Y(i) < H + 20) named.add(i); });
+    if (named.size <= 90) {
+      ctx.textBaseline = 'middle';
+      for (const i of named) if (i !== sel) label(N[i].n, X(i) + r + 4, Y(i));
+      if (sel >= 0) label(N[sel].n, X(sel) + r + 6, Y(sel), true);
+    }
+  }
+
+  function pick(px: number, py: number) {
+    let best = -1, bd = 12 * 12;
+    for (let i = 0; i < N.length; i++) {
+      if (!active(i)) continue;
+      const dx = N[i].x * scale + tx - px, dy = N[i].y * scale + ty - py, d = dx * dx + dy * dy;
+      if (d < bd) { bd = d; best = i; }
+    }
+    return best;
+  }
+
+  function renderPanel() {
+    if (sel < 0) { renderEmpty(); pEmpty.hidden = false; pPerson.hidden = true; return; }
+    const p = N[sel], zh = getLang() === 'zh';
+    const rank = p.r === 'Faculty' ? t('rank_fac') : p.r;
+    const nbHtml = p.k.map(([j, shared]) => {
+      const q = N[j];
+      const why = shared.length ? (zh ? '都做：' : 'Both: ') + shared.slice(0, 3).map(topicName).map(esc).join(' · ') : '';
+      return `<li><button type="button" data-i="${j}"><i style="background:${colorOf(q.g)}"></i><span class="nm">${esc(q.n)}</span><span class="sub">${esc(q.us)}</span></button></li>`;
+    }).join('');
+    const coHtml = p.c.map(([j, n, y]) => {
+      const q = N[j];
+      const papers = zh ? `${n} 篇合著` : `${n} paper${n === 1 ? '' : 's'}`;
+      const last = y ? (zh ? ` · 最近 ${y}` : ` · latest ${y}`) : '';
+      return `<li><button type="button" data-i="${j}"><i style="background:${colorOf(q.g)}"></i><span class="nm">${esc(q.n)}</span><span class="sub">${esc(q.us)} · ${papers}${last}</span></button></li>`;
+    }).join('');
+    const coSec = CO.length ? `<div class="np-sub"><h3 class="sec-h">${esc(t('co_h'))}</h3>${p.c.length ? `<ol class="nb">${coHtml}</ol>` : `<p class="small muted" style="margin-top:6px">${esc(t('co_none'))}</p>`}</div>` : '';
+    const simSec = `<div class="np-sub"><h3 class="sec-h">${esc(t('related_h'))}</h3><ol class="nb">${nbHtml}</ol></div>`;
+    const person = (x: number | string) => typeof x === 'number'
+      ? `<li><button type="button" data-i="${x}"><i style="background:${colorOf(N[x].g)}"></i><span class="nm">${esc(N[x].n)}</span><span class="sub">${esc(N[x].us)}</span></button></li>`
+      : `<li><span class="nb-off"><i></i><span class="nm">${esc(x)}</span><span class="sub">${esc(t('fam_not_listed'))}</span></span></li>`;
+    const sibHtml = p.sb.map(([j, via]) => `<li><button type="button" data-i="${j}"><i style="background:${colorOf(N[j].g)}"></i><span class="nm">${esc(N[j].n)}</span><span class="sub">${esc(N[j].us)}</span></button></li>`).join('');
+    const famSec = !(p.av.length || p.st.length || p.sb.length) ? (mode === 'adv' ? `<div class="np-sub"><h3 class="sec-h">${esc(t('fam_h'))}</h3><p class="small muted" style="margin-top:6px">${esc(t('fam_none'))}</p></div>` : '') : (p.av.length || p.st.length || p.sb.length) ? `<div class="np-sub">${p.av.length ? `<h3 class="sec-h">${esc(t('fam_advisor'))}</h3><ol class="nb">${p.av.map(person).join('')}</ol>` : ''}${p.st.length ? `<h3 class="sec-h" style="margin-top:12px">${esc(t('tree_students'))}</h3><ol class="nb">${p.st.map(person).join('')}</ol>` : ''}${p.sb.length ? `<h3 class="sec-h" style="margin-top:12px">${esc(t('tree_siblings'))}</h3><ol class="nb">${sibHtml}</ol>` : ''}</div>` : '';
+    const phdLine = p.ph ? `<div class="np-meta" style="margin-top:6px">${esc(t('fam_phd'))} ${esc(p.ph[0])}${p.ph[1] ? ', ' + p.ph[1] : ''}</div>` : '';
+    pPerson.innerHTML = `
+      <div class="np-meta">${esc(rank)} · ${esc(p.us)}</div>
+      <h2 class="np-name"><a href="${base}faculty/${p.id}/">${esc(p.n)}</a></h2>${phdLine}
+      ${p.s ? `<p class="np-sum">${esc(zh ? p.sz || p.s : p.s)}</p>` : ''}
+      <div class="d-acts">${saveMark(p.id)}<a class="d-full" href="${base}faculty/${p.id}/">${esc(t('open_full'))} →</a></div>
+      ${mode === 'adv' ? famSec + simSec + coSec : mode === 'co' ? coSec + famSec + simSec : simSec + famSec + coSec}`;
+    pEmpty.hidden = true; pPerson.hidden = false;
+    bindSaveButtons(pPerson);
+  }
+
+  function renderEmpty() {
+    const zh = getLang() === 'zh';
+    let html = '';
+    if (mode === 'adv') {
+      const rows = ADV.filter(([a, b]) => active(a) && active(b)).map(([a, b]) => `<li><button type="button" data-i="${b}"><span><b>${esc(N[a].n)}</b><span class="arrow">→</span><b>${esc(N[b].n)}</b></span><span class="sub">${esc(N[a].us)} → ${esc(N[b].us)}</span></button></li>`).join('');
+      const fam = new Map<string, Set<number>>();
+      N.forEach((p, i) => p.sb.forEach(([, via]) => { if (!fam.has(via)) fam.set(via, new Set()); fam.get(via)!.add(i); }));
+      const sibRows = [...fam].filter(([, kids]) => [...kids].some(active)).sort((x, y) => y[1].size - x[1].size).map(([via, kids]) => `<li><button type="button" data-i="${[...kids][0]}"><span>${[...kids].map((k) => `<b>${esc(N[k].n)}</b>`).join(', ')}</span><span class="sub">${esc(t('tree_via'))} ${esc(via)}</span></button></li>`).join('');
+      html = `<h2 class="sec-h">${esc(t('adv_pairs_h', { n: ADV.length }))}</h2><ul class="pairs">${rows}</ul>${sibRows ? `<h2 class="sec-h" style="margin-top:18px">${esc(t('sib_groups_h'))}</h2><ul class="pairs">${sibRows}</ul>` : ''}<p class="small muted" style="margin-top:12px">${esc(t('adv_pairs_note'))}</p>`;
+    } else if (mode === 'co') {
+      const top = CO.filter(([a, b]) => active(a) && active(b)).slice().sort((x, y) => y[2] - x[2]).slice(0, 12);
+      const rows = top.map(([a, b, n]) => `<li><button type="button" data-i="${a}"><span><b>${esc(N[a].n)}</b> &amp; <b>${esc(N[b].n)}</b></span><span class="sub">${esc(N[a].us)} · ${esc(N[b].us)} · ${zh ? n + ' 篇合著' : n + ' papers'}</span></button></li>`).join('');
+      html = `<h2 class="sec-h">${esc(t('co_top_h'))}</h2><ul class="pairs">${rows}</ul>`;
+    } else {
+      html = `<h2 class="sec-h">${esc(t('net_how_h'))}</h2><ul class="net-howto"><li>${esc(t('net_how1'))}</li><li>${esc(t('net_how2'))}</li><li>${esc(t('net_how3'))}</li></ul>`;
+    }
+    pEmpty.innerHTML = html;
+  }
+  pEmpty.addEventListener('click', (e) => { const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-i]'); if (b) select(Number(b.dataset.i)); });
+
+  function select(i: number, center = true) {
+    sel = i; hover = -1; tip.hidden = true;
+    renderPanel();
+    const u = new URL(location.href);
+    if (i >= 0) u.searchParams.set('p', N[i].id); else u.searchParams.delete('p');
+    history.replaceState(null, '', u);
+    if (i >= 0 && center) {
+      const fam = famOf(i);
+      const idx = [i, ...(mode === 'adv' && fam.length ? fam : (mode === 'co' && N[i].c.length ? N[i].c : N[i].k).map((k) => k[0]))];
+      fit(idx, true);
+    } else draw();
+  }
+
+  pPerson.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-i]');
+    if (b) select(Number(b.dataset.i));
+  });
+
+  // pointer: drag to pan, pinch / wheel to zoom, tap to select
+  const pts = new Map<number, { x: number; y: number }>();
+  let moved = 0, pinch = 0;
+  const pos = (e: PointerEvent | WheelEvent) => { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
+  cv.addEventListener('pointerdown', (e) => { cv.setPointerCapture(e.pointerId); pts.set(e.pointerId, pos(e)); moved = 0; if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch = Math.hypot(a.x - b.x, a.y - b.y); } });
+  cv.addEventListener('pointermove', (e) => {
+    const p = pos(e);
+    if (pts.has(e.pointerId)) {
+      const prev = pts.get(e.pointerId)!;
+      if (pts.size === 1) {
+        tx += p.x - prev.x; ty += p.y - prev.y; moved += Math.abs(p.x - prev.x) + Math.abs(p.y - prev.y);
+        if (moved > 4) cv.classList.add('dragging');
+        pts.set(e.pointerId, p); tip.hidden = true; draw(); return;
+      }
+      pts.set(e.pointerId, p);
+      const [a, b] = [...pts.values()], d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (pinch) zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, d / pinch);
+      pinch = d; moved = 99; return;
+    }
+    if (e.pointerType !== 'mouse') return;
+    const h = pick(p.x, p.y);
+    cv.classList.toggle('pointing', h >= 0);
+    if (h !== hover) { hover = h; draw(); }
+    if (h >= 0) { tip.innerHTML = `<b>${esc(N[h].n)}</b><br>${esc(N[h].us)}`; tip.style.left = p.x + 'px'; tip.style.top = p.y + 'px'; tip.hidden = false; }
+    else tip.hidden = true;
+  });
+  const up = (e: PointerEvent) => {
+    if (!pts.has(e.pointerId)) return;
+    pts.delete(e.pointerId); pinch = 0; cv.classList.remove('dragging');
+    if (pts.size === 0 && moved <= 4) { const p = pos(e); const h = pick(p.x, p.y); select(h, h >= 0); }
+  };
+  cv.addEventListener('pointerup', up);
+  cv.addEventListener('pointercancel', (e) => { pts.delete(e.pointerId); pinch = 0; });
+  cv.addEventListener('pointerleave', () => { if (hover >= 0) { hover = -1; draw(); } tip.hidden = true; });
+  cv.addEventListener('wheel', (e) => { e.preventDefault(); const p = pos(e); zoomAt(p.x, p.y, Math.exp(-e.deltaY * 0.0016)); }, { passive: false });
+  document.getElementById('zin')!.addEventListener('click', () => zoomAt(W / 2, H / 2, 1.5));
+  document.getElementById('zout')!.addEventListener('click', () => zoomAt(W / 2, H / 2, 1 / 1.5));
+  document.getElementById('zfit')!.addEventListener('click', () => fit(undefined, true));
+  cv.tabIndex = 0;
+  cv.addEventListener('keydown', (e) => { if (e.key === 'Escape') select(-1); });
+
+  // controls
+  const visible = () => N.reduce((n, _, i) => n + (active(i) ? 1 : 0), 0);
+  function updateCount() { countEl.textContent = t('net_count', { n: visible(), m: N.length }); }
+  function refilter() {
+    if (sel >= 0 && !active(sel)) select(-1, false);
+    if (sel < 0) renderEmpty();
+    updateCount();
+    if (uni || phdSel) fit(N.map((_, i) => i).filter(active), true); else draw();
+  }
+  document.getElementById('net-legend')!.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('.lg'); if (!b) return;
+    const g = Number(b.dataset.g), on = !groupOn.has(g);
+    on ? groupOn.add(g) : groupOn.delete(g);
+    b.setAttribute('aria-pressed', String(on));
+    refilter();
+  });
+  const modeEl = document.getElementById('net-mode')!;
+  const explainEl = document.getElementById('net-explain')!;
+  const solid = '<svg width="26" height="8" aria-hidden="true"><path d="M1 4h24" stroke="currentColor" stroke-width="1.6"/></svg>';
+  const thick = '<svg width="26" height="8" aria-hidden="true"><path d="M1 4h24" stroke="currentColor" stroke-width="3"/></svg>';
+  const dashed = '<svg width="30" height="10" aria-hidden="true"><path d="M1 5h20" stroke="currentColor" stroke-width="1.6" stroke-dasharray="4 3"/><path d="M21 1l7 4-7 4z" fill="currentColor"/></svg>';
+  const dotted = '<svg width="26" height="8" aria-hidden="true"><path d="M2 4h22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="0.5 4"/></svg>';
+  function explain() {
+    const key = (svg: string, k: string) => `<span class="key">${svg}${esc(t(k))}</span>`;
+    explainEl.innerHTML = mode === 'adv'
+      ? `<span>${esc(t('net_exp_adv'))}</span>${key(dashed, 'net_key_adv')}${key(dotted, 'net_key_sib')}`
+      : mode === 'co'
+      ? `<span>${esc(t('net_exp_co'))}</span>${key(solid, 'net_key_co1')}${key(thick, 'net_key_co2')}`
+      : `<span>${esc(t('net_exp_sim'))}</span>${key(solid, 'net_key_sim')}`;
+  }
+  function setMode(m: Mode, refit = true) {
+    mode = m;
+    modeEl.querySelectorAll('button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.m === m)));
+    const u = new URL(location.href); if (m !== 'sim') u.searchParams.set('lines', m); else u.searchParams.delete('lines'); history.replaceState(null, '', u);
+    explain(); renderPanel();
+    if (sel >= 0) select(sel);
+    else if (refit && m === 'adv' && inAdv.size) fit([...inAdv].filter(active), true);
+    else draw();
+  }
+  modeEl.addEventListener('click', (e) => { const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-m]'); if (b && !b.disabled) setMode(b.dataset.m as Mode); });
+  uSel.addEventListener('change', () => { uni = uSel.value; if (!uni) fit(undefined, true); refilter(); });
+  const findPerson = () => {
+    const v = qIn.value.trim().toLowerCase(); if (!v) return;
+    const exact = N.findIndex((p) => `${p.n} · ${p.us}`.toLowerCase() === v || p.n.toLowerCase() === v);
+    const i = exact >= 0 ? exact : N.findIndex((p) => p.n.toLowerCase().includes(v));
+    if (i < 0) return;
+    if (!active(i)) { groupOn.add(N[i].g); document.querySelector(`.lg[data-g="${N[i].g}"]`)?.setAttribute('aria-pressed', 'true'); if (uni && N[i].u !== uni) { uni = ''; uSel.value = ''; } updateCount(); }
+    select(i);
+  };
+  qIn.addEventListener('change', findPerson);
+  qIn.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); findPerson(); } });
+
+  document.addEventListener('themechange', () => requestAnimationFrame(() => { readColors(); draw(); }));
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { readColors(); draw(); });
+  document.addEventListener('langchange', () => { renderPanel(); updateCount(); explain(); });
+  new ResizeObserver(() => resize()).observe(stage);
+
+  fetch(base + 'network.json').then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }).then((d) => {
+    N = d.nodes; E = d.edges; CO = d.co || [];
+    N.forEach((p, i) => { p.av.forEach((a) => { if (typeof a === 'number') { ADV.push([a, i]); inAdv.add(a); inAdv.add(i); } }); if (p.sb.length) inAdv.add(i); });
+    if (!CO.length) { const cb = modeEl.querySelector<HTMLButtonElement>('[data-m="co"]')!; cb.disabled = true; document.getElementById('co-desc')!.textContent = t('net_mode_co_soon'); }
+    const lines = new URLSearchParams(location.search).get('lines');
+    explain();
+    if (lines === 'adv' || (lines === 'co' && CO.length)) setMode(lines as Mode, false);
+    readColors(); resize(); fit(phdSel ? N.map((_, i) => i).filter(active) : undefined); renderPanel();
+    status.hidden = true;
+    const dl = document.getElementById('net-names')!;
+    dl.innerHTML = N.map((p) => `<option value="${esc(p.n + ' · ' + p.us)}"></option>`).join('');
+    updateCount();
+    const want = new URLSearchParams(location.search).get('p');
+    const i = want ? N.findIndex((p) => p.id === want) : -1;
+    if (i >= 0) select(i);
+  }).catch(() => { status.textContent = t('net_error'); });
+</script>

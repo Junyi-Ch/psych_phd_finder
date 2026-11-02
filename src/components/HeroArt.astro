@@ -1,0 +1,55 @@
+---
+// Psychology site: eyebrow label and the network-and-head illustration beside the headline.
+import { t } from '../lib/i18n';
+---
+<p class="eyebrow" data-i18n="hero_eyebrow">{t('hero_eyebrow')}</p>
+<div class="hero-art" aria-hidden="true">
+  <svg viewBox="0 0 460 380" width="460" height="380">
+    <circle cx="228" cy="192" r="160" class="ha-halo"/>
+    <g class="ha-line" stroke-width="3">
+      <path d="M228 192 Q155 163 104 104"/><path d="M228 192 Q278 127 352 92"/><path d="M228 192 Q315 194 392 236"/><path d="M228 192 Q279 246 300 318"/><path d="M228 192 Q189 254 126 292"/>
+    </g>
+    <g class="ha-line" stroke-width="2" stroke-dasharray="4 7">
+      <path d="M104 104 Q90 161 52 206"/><path d="M352 92 Q287 86 232 52"/><path d="M300 318 Q336 266 392 236"/><path d="M104 104 Q162 63 232 52"/>
+    </g>
+    <g class="ha-node" stroke-width="3">
+      <circle cx="228" cy="192" r="58" class="f-mari"/>
+      <circle cx="104" cy="104" r="30" class="f-white"/>
+      <circle cx="352" cy="92" r="36" class="f-sun"/>
+      <circle cx="392" cy="236" r="26" class="f-white"/>
+      <circle cx="300" cy="318" r="32" class="f-sun"/>
+      <circle cx="126" cy="292" r="28" class="f-white"/>
+      <circle cx="52" cy="206" r="16" class="f-cream"/>
+      <circle cx="232" cy="52" r="14" class="f-white"/>
+    </g>
+    <g transform="translate(228 192) scale(0.68) translate(-229 -186)" class="ha-ink">
+      <g stroke-width="4" stroke-linecap="round"><line x1="181" y1="157" x2="174" y2="152"/><line x1="203" y1="138" x2="199" y2="130"/><line x1="229" y1="132" x2="229" y2="123"/><line x1="255" y1="138" x2="259" y2="130"/><line x1="277" y1="157" x2="284" y2="152"/></g>
+      <path class="f-white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M212 246 C212 238,207 232,199 232 C193 232,191 226,193 222 C189 220,189 215,193 213 C188 211,188 207,191 205 L185 197 C183 194,186 191,189 189 C191 170,202 151,228 147 C254 143,274 162,273 186 C272 202,264 212,260 222 C258 230,258 238,258 246"/>
+      <path class="f-peach" stroke-width="3" stroke-linejoin="round" d="M214 188 C207 188,206 178,213 176 C211 168,221 163,227 167 C231 159,244 159,248 167 C256 165,262 174,257 180 C263 184,259 194,251 192 C249 200,238 200,236 194 C232 200,220 200,220 192 C214 196,208 192,214 188 Z"/>
+      <path fill="none" stroke-width="2.5" stroke-linecap="round" d="M226 176 C230 180,228 186,234 188"/>
+      <path fill="none" stroke-width="2.5" stroke-linecap="round" d="M242 172 C240 178,246 182,244 188"/>
+    </g>
+    <text x="104" y="113" text-anchor="middle" class="ha-text" font-size="24">a</text>
+    <path class="f-white ha-ink" stroke-width="2.5" stroke-linejoin="round" d="M338 84 h28 a6 6 0 0 1 6 6 v10 a6 6 0 0 1 -6 6 h-16 l-8 7 v-7 h-4 a6 6 0 0 1 -6 -6 v-10 a6 6 0 0 1 6 -6z"/>
+    <path class="f-mari ha-ink" stroke-width="2" stroke-linejoin="round" d="M392 226 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+    <text x="300" y="329" text-anchor="middle" class="ha-text" font-size="28">?</text>
+    <path class="ha-ink" fill="none" stroke-width="3" stroke-linecap="round" d="M116 292 q10 -14 20 0"/><circle cx="126" cy="300" r="3" class="ha-dot"/>
+    <path class="f-sun ha-ink ha-twinkle" stroke-width="2" stroke-linejoin="round" d="M410 120l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+    <path class="f-mari ha-ink ha-twinkle d2" stroke-width="2" stroke-linejoin="round" d="M44 314l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  </svg>
+</div>
+<style>
+  .hero-art svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .ha-halo { fill: var(--halo); }
+  .ha-line { fill: none; stroke: var(--art-line); stroke-linecap: round; }
+  .ha-node { stroke: var(--art-line); } .ha-ink { stroke: #1A1714; }
+  .ha-ink { fill: none; }
+  .f-mari { fill: #FFB547; } .f-sun { fill: #FFD36E; } .f-white { fill: #FFFFFF; } .f-cream { fill: #FFF3D9; } .f-peach { fill: #FFD9C7; }
+  .ha-text { font-family: var(--font-display); font-weight: 600; fill: #1A1714; }
+  .ha-dot { fill: #1A1714; }
+  @media (prefers-reduced-motion: no-preference) {
+    .ha-twinkle { transform-box: fill-box; transform-origin: center; animation: ha-tw 3.2s ease-in-out infinite; }
+    .ha-twinkle.d2 { animation-delay: 1.4s; }
+    @keyframes ha-tw { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.18) rotate(12deg); } }
+  }
+</style>

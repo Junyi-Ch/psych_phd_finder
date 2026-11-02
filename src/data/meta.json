@@ -1,0 +1,9 @@
+{
+ "programs": 92,
+ "faculty": 4391,
+ "with_labels": 4391,
+ "left_out_filter": 973,
+ "left_out_clinical_role": 99,
+ "left_out_labeller": 266,
+ "built": "2026-11-01"
+}

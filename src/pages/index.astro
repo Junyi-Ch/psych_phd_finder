@@ -1,0 +1,234 @@
+---
+import Base from '../layouts/Base.astro';
+import { FIELDS } from '../lib/data';
+import RankFilters from '../components/RankFilters.astro';
+import HeroArt from '../components/HeroArt.astro';
+import { t } from '../lib/i18n';
+import { FIELD_SHORT as SHORT, EXAMPLES, EXAMPLE_LABELS } from '../lib/discipline';
+---
+<Base>
+  <section class="hero">
+    <h1><span data-i18n="match_h1a">{t("match_h1a")}</span> <span class="hl" data-i18n="match_h1b">{t("match_h1b")}</span><span data-i18n="match_h1c">{t("match_h1c")}</span><span data-lang-only="en">.</span></h1>
+    <p class="side" data-i18n="match_lede2">{t("match_lede2")}</p>
+    <HeroArt />
+  </section>
+
+  <section class="search">
+    <div class="search-box">
+      <label for="q" class="search-label" data-i18n="match_label">Your research interests</label>
+      <textarea id="q" rows="4" data-i18n="match_placeholder" data-i18n-attr="placeholder" placeholder={t("match_placeholder")}></textarea>
+      <div id="hints" class="hints" hidden>
+        <span class="small muted" data-i18n="match_hint_title2">We read this as</span>
+        <span class="chips" id="hint-chips"></span>
+        <span class="small muted hint-help" data-i18n="match_hint_help">Click a term to require it. Click again to ignore it.</span>
+      </div>
+      <div class="search-foot">
+        <div class="unit-pills" role="group" data-i18n="opt_field" data-i18n-attr="aria-label" aria-label="Units">
+          {FIELDS.map((k) => <label class="pill-check"><input type="checkbox" class="fldc" value={k} checked /><span data-i18n={`fshort_${k}`}>{t(`fshort_${k}`)}</span></label>)}
+        </div>
+        <button type="button" class="btn primary lg" id="go"><span data-i18n="match_button">Find matches</span> <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+    <div class="below-box">
+      <div class="examples"><span class="small muted" data-i18n="try_example">Try an example:</span>
+        {EXAMPLE_LABELS.map((l, i) => <button type="button" class="ex" data-ex={i}>{l}</button>)}
+      </div>
+      <span class="status" id="status"><span class="loadbar" id="loadbar" data-n="0" hidden><i></i><i></i><i></i><i></i><i></i><i></i></span><span id="status-text"></span></span>
+    </div>
+    <div id="err" class="notice error" hidden></div>
+    <div id="cjk" class="notice" hidden data-i18n="cjk_notice">Chinese text is translated to English on your device before matching (the browser’s own translator when available, otherwise a one-time 110 MB model). The translation is shown with the results so you can correct it.</div>
+    <div id="translated" class="notice" hidden></div>
+    <details class="opts">
+      <summary data-i18n="match_opts">More filters</summary>
+      <div class="opts-grid">
+        <label class="field"><span><span data-i18n="opt_threshold">Minimum fit score</span> <output id="thr-out">35</output></span><input type="range" id="thr" min="10" max="80" value="35"></label>
+        <input type="hidden" id="lex" value="15">
+        <RankFilters />
+        <div class="field"><span data-i18n="opt_rank">Rank</span><div class="toolbar"><label class="check"><input type="checkbox" class="rank" value="Professor" checked><span data-i18n="rank_prof">Professor</span></label><label class="check"><input type="checkbox" class="rank" value="Associate Professor" checked><span data-i18n="rank_assoc">Associate Professor</span></label><label class="check"><input type="checkbox" class="rank" value="Assistant Professor" checked><span data-i18n="rank_asst">Assistant Professor</span></label><label class="check"><input type="checkbox" class="rank" value="Faculty" checked><span data-i18n="rank_fac">Rank not listed</span></label></div></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="match-results" id="results"></section>
+</Base>
+<style is:global>
+  .search { display: grid; gap: 14px; }
+  .search-box { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow); padding: 20px 22px; display: grid; gap: 14px; }
+  .search-box:focus-within { border-color: var(--line-2); }
+  .search-label { font-weight: 600; font-size: 0.875rem; color: var(--ink-3); }
+  .search-box textarea { width: 100%; border: 0; outline: none; resize: vertical; background: transparent; color: var(--ink); font-size: 1.12rem; line-height: 1.55; padding: 0; min-height: 84px; }
+  .search-box textarea::placeholder { color: var(--ink-3); opacity: 0.55; transition: opacity 0.15s; }
+  .search-box textarea:focus::placeholder { opacity: 0; }
+  .hints { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .hints .chips { display: contents; }
+  .hint-help { flex-basis: 100%; }
+  .search-foot { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--line); }
+  .unit-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .below-box { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; justify-content: space-between; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .examples .ex { border: 1px solid var(--line); background: var(--bg-2); color: var(--ink-2); border-radius: 999px; padding: 7px 13px; font-size: 0.875rem; min-height: 36px; }
+  .examples .ex:hover { border-color: var(--action); color: var(--action-text); }
+  .opts summary { cursor: pointer; color: var(--ink-3); font-size: 0.875rem; font-weight: 600; width: max-content; }
+  .opts-grid .rank-filters { grid-column: 1 / -1; max-width: 560px; }
+  .opts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 24px; padding: 14px 0 4px; }
+  .opts-grid input[type=range] { width: 100%; }
+  .match-results { margin-top: 48px; }
+  .results-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .results-head .left { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  .results-head h2 { font-size: 1.5rem; }
+  .results-head .right { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .prog { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; padding: 18px 20px; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+  .prog .prog-title { font-size: 1.12rem; }
+  .prog .prog-title a { color: var(--ink); text-decoration: none; }
+  .prog .prog-title a:hover { color: var(--action-text); }
+  .prog .top { margin-top: 10px; display: grid; gap: 4px; font-size: 0.9rem; color: var(--ink-2); }
+  .prog .top span { display: block; }
+  .prog .top span b { font-weight: 600; color: var(--ink); }
+  .prog .top button { color: var(--ink); }
+  .prog .side { display: grid; justify-items: end; gap: 6px; align-content: start; }
+</style>
+<script>
+  import faculty from '../data/faculty.json';
+  import programs from '../data/programs.json';
+  import tax from '../data/taxonomy.json';
+  import { BASE, esc, withBase, labelText, passesRank, type Faculty, type Program, type Taxonomy } from '../lib/data';
+  import { t, getLang } from '../lib/i18n';
+  import { indexFaculty, splitFacets, detectHints, loadIndex, loadModel, loadReranker, embed, semanticScores, score, rerank, programFit, hasCJK, translateToEnglish, type Hint, type Scored, type Manifest, type Facet } from '../lib/match';
+  import { personRow, bindSaveButtons, setupDrawer, scoreHtml, mark, chip } from '../lib/ui';
+  import { EXAMPLES } from '../lib/discipline';
+
+  const F = faculty as unknown as Faculty[];
+  const P = programs as unknown as Program[];
+  const T = tax as unknown as Taxonomy;
+  const byId = new Map(F.map((f) => [f.id, f]));
+  const byProg = new Map(P.map((p) => [p.slug, p]));
+  indexFaculty(F, T);
+  setupDrawer((id) => { const f = byId.get(id); return f ? { f, p: byProg.get(f.u) } : undefined; }, T);
+
+  const $ = <T extends HTMLElement>(s: string) => document.querySelector<T>(s)!;
+  const q = $<HTMLTextAreaElement>('#q'), go = $<HTMLButtonElement>('#go'), results = $('#results'), statusText = $('#status-text'), loadbar = $('#loadbar'), err = $('#err');
+  const thr = $<HTMLInputElement>('#thr'), lex = $<HTMLInputElement>('#lex');
+  let hints: Hint[] = [], last: Scored[] | null = null, view: 'faculty' | 'programs' = 'faculty', shown = 30, lastQuery = '';
+
+  document.querySelectorAll<HTMLButtonElement>('.examples .ex').forEach((b) => b.addEventListener('click', () => { q.value = EXAMPLES[Number(b.dataset.ex)]; q.dispatchEvent(new Event('input')); run(true); }));
+  thr.addEventListener('input', () => { $('#thr-out').textContent = thr.value; if (last) run(false); });
+  lex.addEventListener('input', () => { $('#lex-out').textContent = lex.value + '%'; if (last) run(false); });
+  document.querySelectorAll<HTMLInputElement>('.rank, .fldc, #qs-max, #us-max').forEach((c) => c.addEventListener('change', () => last && run(false)));
+
+  function renderHints() {
+    const box = $('#hints'), chips = $('#hint-chips');
+    box.hidden = !hints.length;
+    chips.innerHTML = hints.map((h, i) => `<button type="button" class="chip btn-chip" data-dim="${h.dim}" data-i="${i}" data-mode="${h.mode}" aria-pressed="${h.mode !== 'off'}">[${esc(h.label)}]${h.mode === 'require' ? ' ✓' : ''}</button>`).join('');
+    chips.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.addEventListener('click', () => {
+      const h = hints[Number(b.dataset.i)];
+      h.mode = h.mode === 'boost' ? 'require' : h.mode === 'require' ? 'off' : 'boost';
+      renderHints(); if (last) run(false);
+    }));
+  }
+  q.addEventListener('input', () => {
+    const text = q.value;
+    $('#cjk').hidden = !/[一-鿿]/.test(text);
+    const fresh = detectHints(text, T, getLang());
+    hints = fresh.map((h) => ({ ...h, mode: hints.find((x) => x.code === h.code)?.mode ?? 'boost' }));
+    renderHints();
+  });
+  document.addEventListener('langchange', () => { hints = detectHints(q.value, T, getLang()).map((h) => ({ ...h, mode: hints.find((x) => x.code === h.code)?.mode ?? 'boost' })); renderHints(); if (last) render(); });
+
+  let cached: { query: string; english: string; via: 'browser' | 'model' | null; cos: Float32Array; ids: string[]; manifest: Manifest; facets: Facet[] } | null = null;
+  const progress = (label: string) => (p: { phase: string; pct: number }) => { loadbar.dataset.n = String(Math.min(6, Math.ceil(p.pct / 17))); statusText.textContent = p.phase === 'ready' ? t('match_ready') : `${label} ${p.pct}%`; };
+  function showTranslation() {
+    const box = $('#translated');
+    box.hidden = !cached?.via;
+    if (!cached?.via) return;
+    box.innerHTML = `<b>${t('translated_note')}</b> <span class="muted small">(${t(cached.via === 'browser' ? 'translated_via_browser' : 'translated_via_model')})</span><div style="margin-top:4px">${esc(cached.english)}</div><button type="button" class="btn sm quiet" id="use-english" style="margin-top:6px">${t('translated_edit')}</button>`;
+    box.querySelector('#use-english')?.addEventListener('click', () => { q.value = cached!.english; q.dispatchEvent(new Event('input')); q.focus(); });
+  }
+  let runSeq = 0; // option changes can overlap; only the latest run renders
+  async function run(fresh = true) {
+    const text = q.value.trim(); if (!text) return;
+    const seq = ++runSeq;
+    err.hidden = true;
+    try {
+      if (fresh || !cached || cached.query !== text) {
+        go.disabled = true; loadbar.hidden = false; loadbar.dataset.n = '0'; statusText.textContent = t('match_loading');
+        const { manifest, ids, vec } = await loadIndex(BASE);
+        let english = text, via: 'browser' | 'model' | null = null, keywords = '';
+        if (hasCJK(text)) {
+          statusText.textContent = t('match_translating');
+          const tr = await translateToEnglish(text, manifest.translate, progress(t('match_translating')));
+          english = tr.text; via = tr.via; keywords = tr.keywords;
+          hints = detectHints(english, T, getLang()).map((h) => ({ ...h, mode: hints.find((x) => x.code === h.code)?.mode ?? 'boost' }));
+          renderHints();
+        }
+        // the reranker downloads alongside the embedding model
+        loadReranker(manifest.rerank.model).catch(() => {});
+        const pipe = await loadModel(manifest.model, progress(t('match_loading')));
+        statusText.textContent = t('match_running'); loadbar.dataset.n = '6';
+        const qv = await embed(pipe, manifest, english, keywords);
+        const facets: Facet[] = [];
+        for (const part of splitFacets(english)) facets.push({ text: part, cos: semanticScores(await embed(pipe, manifest, part), vec, manifest.dimensions, manifest.quantizationScale) });
+        cached = { query: text, english, via, cos: semanticScores(qv, vec, manifest.dimensions, manifest.quantizationScale), ids, manifest, facets };
+      }
+      const ranks = new Set(Array.from(document.querySelectorAll<HTMLInputElement>('.rank:checked')).map((c) => c.value));
+      const fields = new Set(Array.from(document.querySelectorAll<HTMLInputElement>('.fldc:checked')).map((c) => c.value));
+      let res = score(F, cached.ids, cached.cos, cached.english, hints, { lexWeight: Number(lex.value) / 100, threshold: Number(thr.value) / 100, ranks, fields, manifest: cached.manifest, facets: cached.facets });
+      try {
+        statusText.textContent = t('match_rerank');
+        const rr = await loadReranker(cached.manifest.rerank.model);
+        res = await rerank(rr, cached.english, res, cached.manifest.rerank, T, cached.facets.length >= 3 ? 0.25 : undefined);
+      } catch { /* the first-pass order still stands */ }
+      if (seq !== runSeq) return;
+      statusText.textContent = t('match_ready');
+      const qsMax = Number($<HTMLSelectElement>('#qs-max').value), usMax = Number($<HTMLSelectElement>('#us-max').value);
+      if (qsMax || usMax) res = res.filter((s) => { const pr = byProg.get(s.f.u); return pr ? passesRank(pr, qsMax, usMax) : false; });
+      last = res; lastQuery = text; shown = 30;
+      showTranslation();
+      render();
+      if (fresh && window.innerWidth < 900) results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e: any) {
+      err.hidden = false; err.textContent = t('model_error') + (e?.message ? ` (${e.message})` : '');
+      statusText.textContent = '';
+    } finally { go.disabled = false; loadbar.hidden = true; }
+  }
+  go.addEventListener('click', () => run(true));
+  // A query in the URL fragment (never sent to a server) pre-fills the box, so a result set can be shared as a link.
+  if (location.hash.startsWith('#q=')) {
+    try { q.value = decodeURIComponent(location.hash.slice(3)); q.dispatchEvent(new Event('input')); } catch {}
+  }
+  q.addEventListener('keydown', (e) => { if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') run(true); });
+
+  function why(s: Scored) {
+    const lang = getLang();
+    const parts: string[] = [];
+    if (s.facets?.length) parts.push(`${t('matched_on')}: ${s.facets.map(esc).join(', ')}`);
+    else if (s.labels.length) parts.push(`${t('matched_on')}: ${s.labels.map((l) => esc(labelText(T, l.dim, l.code, lang))).join(', ')}`);
+    if ((s.moved ?? 0) > 0) parts.push(t('why_reread'));
+    return parts.join(' · ');
+  }
+  function render() {
+    if (!last) return;
+    const lang = getLang();
+    const head = `<div class="results-head rise"><div class="left"><span class="node" aria-hidden="true">[S ${t('your_query')}]</span><h2>${view === 'faculty' ? t('results_n', { n: last.length }) : t('results_p', { n: programFit(last, P).length })}</h2></div><div class="right"><div class="seg" role="group"><button type="button" aria-pressed="${view === 'faculty'}" data-view="faculty">${t('view_faculty')}</button><button type="button" aria-pressed="${view === 'programs'}" data-view="programs">${t('view_programs')}</button></div><button type="button" class="btn sm quiet" id="copy-link">${t('copy_link')}</button></div></div>`;
+    let body = '';
+    if (!last.length) body = `<div class="empty"><b>${t('no_results')}</b>${t('no_results_help')}</div>`;
+    else if (view === 'faculty') {
+      const terms = Array.from(new Set(last.slice(0, shown).flatMap((s) => s.terms)));
+      body = `<div class="rows tree">${last.slice(0, shown).map((s) => personRow(s.f, byProg.get(s.f.u), T, { score: s.score, why: why(s) || undefined, summaryHtml: mark(lang === 'zh' && s.f.summary_zh ? s.f.summary_zh : s.f.summary, s.terms) })).join('')}</div>`;
+      if (shown < last.length) body += `<div style="text-align:center;margin-top:14px"><button type="button" class="btn" id="more">${t('load_more', { n: Math.min(30, last.length - shown) })}</button></div>`;
+    } else {
+      const rows = programFit(last, P);
+      body = `<div class="rows">${rows.map((r) => `<article class="prog"><div><h2 class="prog-title"><a href="${withBase('programs/' + r.p.slug + '/')}">${esc(r.p.name)}</a></h2><div class="small muted">${esc(r.p.city)}, ${esc(r.p.state)} · ${t('faculty_n', { n: r.p.n })}</div><div class="top">${r.top.map((s) => `<span><button type="button" class="open-person btn quiet sm" data-id="${esc(s.f.id)}" style="padding:0;height:auto"><b>${esc(s.f.name)}</b></button> · ${esc(s.f.rank)} · ${Math.round(s.score * 100)}</span>`).join('')}</div></div><div class="side">${scoreHtml(r.fit)}<span class="small muted">${r.n} ${t('matches')}</span></div></article>`).join('')}</div>`;
+    }
+    results.innerHTML = head + body;
+    results.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((b) => b.addEventListener('click', () => { view = b.dataset.view as any; render(); }));
+    results.querySelector('#more')?.addEventListener('click', () => { shown += 30; render(); });
+    results.querySelector<HTMLButtonElement>('#copy-link')?.addEventListener('click', async (ev) => {
+      const url = location.origin + location.pathname + '#q=' + encodeURIComponent(lastQuery);
+      history.replaceState(null, '', '#q=' + encodeURIComponent(lastQuery));
+      const b = ev.currentTarget as HTMLButtonElement;
+      try { await navigator.clipboard.writeText(url); b.textContent = t('copied'); } catch { prompt(t('copy_link'), url); }
+      setTimeout(() => (b.textContent = t('copy_link')), 1500);
+    });
+    bindSaveButtons(results);
+  }
+</script>

@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+import buildInfo from '../data/meta.json';
+import programs from '../data/programs.json';
+import tax from '../data/taxonomy.json';
+import { DIMS, type Program, type Taxonomy } from '../lib/data';
+import { SITE_NAME, OWNER, REPO_URL, SIBLING } from '../lib/site';
+const T = tax as unknown as Taxonomy;
+const P = (programs as Program[]).slice().sort((a, b) => a.name.localeCompare(b.name));
+const base = import.meta.env.BASE_URL;
+const sections = [
+  ['what', 'What this site is'],
+  ['use', 'How to use it'],
+  ['matching', 'How matching works'],
+  ['network', 'Faculty network'],
+  ['data', 'What data is included'],
+  ['labels', 'Research labels'],
+  ['rankings', 'Rankings'],
+  ['privacy', 'Privacy'],
+  ['limits', 'Limits'],
+  ['contact', 'Corrections and contact'],
+  ['universities', 'Universities included'],
+];
+---
+<Base title="About" description={`What the ${SITE_NAME} is, how to use it, how matching works and where the data comes from.`}>
+  <div class="about">
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-h">On this page</p>
+      <ol>{sections.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+    </nav>
+    <article class="prose">
+      <h1>About</h1>
+
+      <section id="what">
+        <h2>What this site is</h2>
+        <p>A free tool for people applying to US PhD programs in psychology, cognitive science and neuroscience. You describe your research interests, and it suggests faculty and programs whose work is closest to yours.</p>
+        <p>It covers {buildInfo.faculty} faculty at {buildInfo.programs} universities among the top 100 in the U.S. News national universities ranking: psychology departments and their equivalents (such as psychological and brain sciences), cognitive science departments, and neuroscience departments and programs.</p>
+      </section>
+
+      <section id="use">
+        <h2>How to use it</h2>
+        <dl class="uses">
+          <dt><a href={base}>Find matches</a></dt><dd>Describe what you want to study in a few sentences or a paragraph. Mention your questions, methods, and who or what you study (children, older adults, couples, rodents, songbirds). Results can be shown by person or by program.</dd>
+          <dt><a href={`${base}programs/`}>Programs</a></dt><dd>Browse universities on a map or in a list, and see each one’s departments and faculty.</dd>
+          <dt><a href={`${base}faculty/`}>Faculty</a></dt><dd>Search and filter everyone by research area, method, real-world focus, who they study, and species.</dd>
+          <dt><a href={`${base}network/`}>Network</a></dt><dd>A map of all faculty, placed by how similar their research is.</dd>
+          <dt><a href={`${base}shortlist/`}>Saved</a></dt><dd>Faculty you saved, with your notes. You can download the list as a CSV file.</dd>
+        </dl>
+        <p><b>Tips.</b> Specific descriptions match better than general ones: “how sleep loss changes emotion regulation in adolescents, using EEG and daily diaries” works better than “emotion”. You can write in English or Chinese. Under the search box, “We read this as” shows the research areas and methods picked up from your text; click one to require it, and click again to ignore it.</p>
+      </section>
+
+      <section id="matching">
+        <h2>How matching works</h2>
+        <ol>
+          <li><b>Meaning.</b> Your text is turned into a numeric representation (an “embedding”) on your own device and compared with a representation of each faculty member’s research.</li>
+          <li><b>Keywords.</b> Exact terms, such as a method, a population or a technical term, are matched as well.</li>
+          <li><b>Your priorities.</b> Research areas and methods found in your text give a small boost to faculty who work on them, or become requirements if you click them.</li>
+          <li><b>Second check.</b> The top 30 results are re-read against your text by a second model and re-ordered.</li>
+          <li><b>Fit score.</b> Each person gets a score from 0 to 100. A program’s score combines its three best matches, so departments with several good fits rank above departments with one.</li>
+        </ol>
+        <details class="tech">
+          <summary>Technical details</summary>
+          <ul>
+            <li>Embeddings: <code>snowflake-arctic-embed-m-v1.5</code> (768 dimensions), run in the browser with Transformers.js. Faculty vectors are precomputed and stored as 8-bit integers. The model is downloaded once (about 110 MB) and cached.</li>
+            <li>Each faculty vector averages three views: the research summary with keywords, the department profile text, and the published summary, research areas and labels. Profile text is used only to compute the vector and is never published.</li>
+            <li>Keyword score: BM25 over each person’s published text. Semantic and keyword scores are standardised per query and combined 85% / 15%.</li>
+            <li>Re-ranking: <code>ms-marco-MiniLM-L-6</code> cross-encoder over the top 30, blended evenly with the first-pass order.</li>
+            <li>Chinese input is translated to English on your device (the browser’s built-in translator when available, otherwise a 110 MB model), with a glossary of psychology terms. The translation is shown with the results so you can correct it.</li>
+            <li>Scores are calibrated on 25 example descriptions across the field: the median person for a typical query scores 0 and the top 0.5% score 85. Program score = 50% best match + 30% second + 20% third.</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="network">
+        <h2>Faculty network</h2>
+        <p>The <a href={`${base}network/`}>Network</a> page and the “Similar research” list on each faculty page compare every faculty member’s research profile with everyone else’s, using the same profile vectors as matching. People are placed close together when their profiles are similar, and each person is linked to their nearest neighbours. Colour shows the main research area.</p>
+        <p>Similarity is read from public profile text only. Two people being close does not mean they work together, and people with short profiles can land in odd places. Co-author links and academic family trees are planned for a later version.</p>
+      </section>
+
+      <section id="data">
+        <h2>What data is included</h2>
+        <h3>Programs</h3>
+        <p>The top 100 national universities in the <a href="https://www.usnews.com/best-colleges/rankings/national-universities" rel="noreferrer">U.S. News 2027 ranking</a>. At each one, the site includes the psychology department (or its equivalent), the cognitive science department, and departments or programs named neuroscience. Every department is labelled as psychology, cognitive science or neuroscience.</p>
+        <p>Not included: medical schools, neurobiology and other mainly biological departments, education schools, and clinical psychology training as such. Clinical psychologists who run research labs in a psychology department are included.</p>
+        <h3>Faculty</h3>
+        <p>Assistant, associate and full professors, the people who can usually supervise a dissertation. Lecturers, teaching and clinical faculty, research professors, emeriti, visiting and affiliated faculty are not included. In neuroscience programs, only faculty whose research is relevant to psychology (behavior, cognition, emotion, perception and so on) are kept; people who work mainly on molecules, cells, genes or disease mechanisms are left out. Some departments do not list job titles; their faculty appear as “Rank not listed”.</p>
+        <h3>What is shown about each person</h3>
+        <p>A one-sentence research summary written for this site, the research areas the department lists, research labels, and links to the department profile and, when available, a personal or lab site or Google Scholar. No photos are shown.</p>
+        <p>The data was collected from official department websites on {buildInfo.built}.</p>
+      </section>
+
+      <section id="labels">
+        <h2>Research labels</h2>
+        <p>Each person has labels in five groups, assigned automatically by a language model from their public profile and then checked against words in their profile. A ★ marks their main focus. Labels are a guide, not a full account of anyone’s work, and they can be wrong.</p>
+        <div class="label-groups">
+          {DIMS.map((d) => <div class="panel"><b>{T.dimensions[d].label}</b><div class="chips" style="margin-top:10px">{Object.entries(T.dimensions[d].labels_short).map(([c, l]) => <span class="chip" data-dim={d} title={T.dimensions[d].labels[c]}>{l}</span>)}</div></div>)}
+        </div>
+      </section>
+
+      <section id="rankings">
+        <h2>Rankings</h2>
+        <p>You can filter programs by the <a href="https://www.usnews.com/best-colleges/rankings/national-universities" rel="noreferrer">U.S. News Best National Universities 2027</a> ranking (published September 2026). The filter is off by default and does not affect how matches are scored. This ranks whole universities, mostly on undergraduate measures, not psychology PhD programs.</p>
+        <p>Rankings are a rough guide. They say little about whether a department has faculty working on what you want to study, so use them alongside the matches, not instead of them.</p>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p>Matching runs entirely in your browser. Nothing you type is sent anywhere. Saved faculty and notes stay in your browser. There are no accounts and no analytics.</p>
+      </section>
+
+      <section id="limits">
+        <h2>Limits</h2>
+        <ul>
+          <li>People with short public profiles are harder to match, so they may rank lower than they should.</li>
+          <li>Departments change. Hires, departures and title changes after {buildInfo.built} are not reflected yet.</li>
+          <li>Some department websites could not be read in full, so a few departments are missing people.</li>
+          <li>Neuroscience programs and cognitive science departments often admit students through their own PhD programs, separately from psychology. Check each program’s admissions page.</li>
+          <li>Matching works in English. Chinese is translated first, so check the translation shown with your results.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Corrections and contact</h2>
+        <p>Each faculty page has a “Report an error” link. Faculty who want their information changed or removed can <a href={`${REPO_URL}/issues/new`} rel="noreferrer">open an issue</a> or email <a href={`mailto:${OWNER.email}`}>{OWNER.email}</a>.</p>
+        <p>Made by <a href={OWNER.url} rel="noreferrer">{OWNER.name}</a>, a sibling of the <a href={SIBLING.url} rel="noreferrer">{SIBLING.name}</a>. The code and data pipeline are public on <a href={REPO_URL} rel="noreferrer">GitHub</a>.</p>
+      </section>
+
+      <section id="universities">
+        <h2>Universities included</h2>
+        <ul class="unis">{P.map((p) => <li><a href={`${base}programs/${p.slug}/`}>{p.name}</a> <span class="muted small">{p.n}</span></li>)}</ul>
+      </section>
+    </article>
+  </div>
+</Base>
+<style is:global>
+  .about { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 48px; align-items: start; }
+  .toc { position: sticky; top: calc(var(--header-h) + 24px); }
+  .toc-h { font-size: 0.8125rem; font-weight: 600; color: var(--ink-3); margin-bottom: 8px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; border-left: 2px solid var(--line); }
+  .toc a { display: block; padding: 6px 12px; margin-left: -2px; border-left: 2px solid transparent; color: var(--ink-3); text-decoration: none; font-size: 0.92rem; }
+  .toc a:hover { color: var(--ink); }
+  .toc a[aria-current="true"] { color: var(--action-text); border-left-color: var(--action); font-weight: 600; }
+  .about .prose { max-width: 72ch; }
+  .about .prose section { scroll-margin-top: calc(var(--header-h) + 16px); padding-top: 8px; }
+  .about .prose section + section { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 28px; }
+  .about .prose h2 { margin-top: 0; }
+  .uses { display: grid; grid-template-columns: max-content 1fr; gap: 10px 20px; margin: 12px 0 14px; }
+  .uses dt { font-weight: 600; } .uses dd { margin: 0; color: var(--ink-2); }
+  .tech { margin-top: 14px; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); }
+  .tech summary { cursor: pointer; font-weight: 600; color: var(--ink-2); }
+  .tech ul { margin-top: 10px; }
+  .label-groups { display: grid; gap: 10px; margin-top: 12px; }
+  .unis { columns: 2; column-gap: 24px; list-style: none; padding: 0 !important; }
+  .unis li { break-inside: avoid; padding: 3px 0; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 20px; } .toc { position: static; } .toc ol { display: flex; flex-wrap: wrap; gap: 6px; border: 0; } .toc a { border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; margin: 0; } .uses { grid-template-columns: 1fr; gap: 2px 0; } .uses dd { margin-bottom: 10px; } .unis { columns: 1; } }
+</style>
+<script>
+  const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('.toc a'));
+  const obs = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) links.forEach((a) => a.setAttribute('aria-current', String(a.hash === '#' + e.target.id)));
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  document.querySelectorAll('.about section[id]').forEach((s) => obs.observe(s));
+</script>
